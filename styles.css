@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Yomogi', sans-serif;
+}
+
+html{
+    overflow-y: scroll;    
+}
+@keyframes slideFromTop{
+    from{
+        transform: translateY(-100px);
+        opacity: 0; 
+    }
+    to{
+        transform: translateY(0x);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromBottom{
+    from{
+        transform: translateY(100px);
+        opacity: 0; 
+    }
+    to{
+        transform: translateY(0x);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromLeft{
+    from{
+        transform: translateX(-100px);
+        opacity: 0; 
+    }
+    to{
+        transform: translateX(0x);
+        opacity: 1;
+    }
+}
+.Title{
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;        
+    font-size: 2.5rem;
+    animation-name: slideFromTop;
+    animation-duration: 1s ;
+    animation-timing-function: ease-out;
+    margin-bottom: 0.25rem;
+    color:  #434343;
+    text-shadow: 0 0 16px, rgba(0,0,0,0.9);
+}
+
+#Version{
+    text-align: right;
+    font-size: 15px;
+}
+
+body{
+    background: url(Images/BackgroundImage1.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    min-height: 100vh;
+}
+
+.display{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:100px;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    animation-name: slideFromBottom;
+    animation-duration: 0.75s ;
+    animation-timing-function: ease-out;
+    margin-bottom: 0.5rem;
+    color: #434343;
+}
+
+.chart{
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    box-shadow: 0 0 16px, rgba(0,0,0,0.8);
+}
+
+.Tabs-Container{
+    justify-content:center;
+    box-shadow: 0 0 16px, rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: row;
+    grid-template-rows: 4;
+    gap: 25px;
+}
+
+#tabs-1, #tabs-2, #tabs-3, #tabs-4{
+    background-color: transparent;
+    border-radius: 15px;
+    border-color:transparent;
+    border: 2px solid #434343;
+    width: 14.6rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    color:#434343;
+    font-size: 20px;
+    animation-duration: 1s;
+    animation-name: slideFromLeft;
+    animation-timing-function: ease-out;    
+}
+
+.active {
+    background-color: #434343;
+    color: aliceblue;
+    transform: translateY(-10px);
+}
+
+#tabs-1:hover, #tabs-2:hover, #tabs-3:hover, #tabs-4:hover,
+#tabs-1.active, #tabs-2.active, #tabs-3.active, #tabs-4.active {
+    background-color: #434343;
+    color: aliceblue;
+}
+
+#tabs-1:active, #tabs-2:active, #tabs-3:active, #tabs-4:active {
+    background-color: #434343;
+    color: aliceblue;
+    transform: translateY(-10px);
+}
+
+#All, #Manga, #Manhwa {
+    width: 1000px; 
+    padding: 20px; 
+    margin: 0; /* Ensure no extra margin */
+}
+
+ul {
+    padding: 0; 
+    margin: 0; 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    justify-items: center; 
+    list-style-type: none; /* Remove bullets */
+    text-align: center;
+}
+
+li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin: 10px; 
+    width: 100%; 
+}
+
+li:hover{
+    background-color: #e9e9e9;
+}
+
+span{
+    font-style: normal;
+    font-family: "Yomogi", cursive;
+    font-weight: lighter;
+}
+
+#AboutPage{
+    width: 1000px;
+    height: 300px;
+}
+
+#All, #Manga, #Manhwa, #AboutPage{
+    flex-direction: row;
+    justify-content: left;
+    background-color: transparent;
+    border-radius: 15px;
+    border-color:transparent;
+    padding-top: 2rem;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    line-height: 0.6cm;
+    margin-bottom: 1rem;
+    color: #434343;
+    
+}
+
+@media (max-width: 800px) {
+    ul {
+        grid-template-columns: repeat(2, 1fr); /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    ul {
+        grid-template-columns: 1fr; /* Stack items on very small screens */
+    }
+}
+
+
+#AboutPage{
+    border: 2px solid #434343;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-up {
+    animation: slideUp 1s ease-out;
+    opacity: 1;
+    transform: translateY(0); /* Final state */
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(100%); /* Off-screen initially */
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

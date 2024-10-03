@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+    <script src="source.js" defer></script>
+    <title>Keso's Manga Recommendations!</title>
+</head>
+
+<body>
+    <div class="Title">
+        <h1>Keso's Recommended Mangas!</h1>
+        <p id="Version">version 1.0.0</p>
+    </div>
+<br>
+    <div class="display">
+        <div class="chart">
+            <h2>Number of Mangas</h2>
+            <canvas id="DoughnutChart1" width="350" height="350"></canvas>
+        </div>
+        <div class="chart">
+            <h2 >Status of Mangas</h2>
+            <canvas id="DoughnutChart2" width="350" height="350"></canvas>
+        </div>
+    </div>
+<br>
+    <div class="Tabs-Container">
+            <button id="tabs-1" class="animated">All</button>
+            <button id="tabs-2" class="animated">Manga</button>
+            <button id="tabs-3" class="animated">Manhwa</button>
+            <button id="tabs-4" class="animated">About Page</button>
+    </div>
+<br>
+<div id="All" class="hidden content-section">
+    <ul>
+        <li>
+            <a href="https://mangadex.org/title/9d9b04ad-9a83-49f4-8ae4-a9a3780fe9c0/sakamoto-days" target="_blank">
+                <img width="200" height="320" src="Images/SakamotoDays.jpg" alt="Sakamoto Days">
+            </a>
+            <h3>Sakamoto Days<br><span>サカモト デイズ</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/141609b6-cf86-4266-904c-6648f389cdc9/ruridragon" target="_blank">
+                <img width="200" height="320" src="Images/RuriDragon.jpg" alt="RuriDragon">
+            </a>
+            <h3>RuriDragon<br><span>ルリドラゴン</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/68112dc1-2b80-4f20-beb8-2f2a8716a430/dandadan" target="_blank">
+                <img width="200" height="320" src="Images/DandadanVol16.jpg" alt="Dandadan">
+            </a>
+            <h3>Dandadan<br><span>ダンダダン</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/1c4f1dd6-c7cc-4474-b3de-2cc9adc330c3/sensei-bokutachi-ga-sekai-wo-horoboshimasu" target="_blank">
+                <img width="200" height="320" src="Images/SenseiBokutachi.jpg" alt="Teacher, we will destroy the world!">
+            </a>
+            <h3>Teacher, we will destroy the world!<br><span>先生！ 僕たちが世界を滅ぼします。</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/f8f3f045-01b5-4216-8f41-d947d8b448b0/youchien-wars?tab=chapters" target="_blank">
+                <img width="200" height="320" src="Images/YouchienWars.jpg" alt="Kindergarten WARS">
+            </a>
+            <h3>Kindergarten WARS<br><span>ダンダダン</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/ce7cd7b0-e595-4f0d-98e8-447da10d652d/mission-yozakura-family" target="_blank">
+                <img width="200" height="320" src="Images/YozakuraFamilyVol26.jpg" alt="Yozakura Family">
+            </a>
+            <h3>Mission: Yozakura Family<br><span>夜桜さんちの大作戦</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/418791c0-35cf-4f87-936b-acd9cddf0989/kaoru-hana-wa-rin-to-saku" target="_blank">
+                <img width="200" height="320" src="Images/FragrantFlowerVol14.jpg" alt="FragrantFlower">
+            </a>
+            <h3>The Fragrant Flower Blooms with Dignity<br><span>薫る花は凛と咲く</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/cb676e05-8e6e-4ec4-8ba0-d3cb4f033cfa/ending-maker" target="_blank">
+                <img width="200" height="320" src="Images/EndingMaker.jpg" alt="EndingMaker">
+            </a>
+            <h3>Ending Maker<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">엔딩 메이커</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/f26c0ae5-c8f6-4630-979e-9a5d310bd795/i-only-want-to-beat-you?tab=chapters" target="_blank">
+                <img width="200" height="320" src="Images/OhRoji.jpg" id="MangaImages">
+            </a>
+            <h3>I Only Want to Beat You, Oh Roji<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">오로지 너를 이기고 싶어</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/fed8c19c-9dec-4ef1-a187-af2c0c9cf17c/will-you-marry-me-again-if-you-are-reborn?tab=chapters" target="_blank">
+                <img width="200" height="320" src="Images/MarryReborn.jpg" id="MangaImages"/>
+            </a>
+            <h3>Will You Marry Me Again If You Are Reborn?<br><span>生まれ変わってもまた、私と結婚してくれますか</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/1b920c57-b359-422c-8d6d-1022c79cc8bb/can-you-fall-in-love-with-the-skeleton?tab=chapters" target="_blank">
+                <img width="200" height="320" src="Images/LoveSkeleton.jpg" id="MangaImages">
+            </a>
+            <h3>Can You Fall in Love With the Skeleton?<br><span>骸骨と恋はできるのか？</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/65263bf9-4f87-4513-b72f-ad6436b3911c/otaku-ni-koi-wa-muzukashii" target="_blank">
+                <img width="200" height="320" src="Images/Wotakoi.jpg" id="MangaImages">
+            </a>
+            <h3>Wotakoi: Love Is Hard for Otaku<br><span>ヲタクに恋は難しい</span></h3>
+        </li>
+    </ul>
+</div>
+
+
+    <div id="Manga" class="hidden">
+        soon
+    </div>
+
+    <div id="Manhwa" class="hidden">
+        soon
+    </div>
+
+    <div id="AboutPage" class="hidden">
+        <h1>About</h1>
+        <br>
+        <p>Hello! This is my mangas that I would recommend to people to read, I hope that I had minimize any suggestive stuff. <br>All these mangas or manhwas are what I have read or still reading since the past 4 years!</p>
+        <p style="padding-top:5rem;">I hope you are interested in these weird taste I have...</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <script src="DoughnutChart1.js" defer></script>
+    <script src="DoughnutChart2.js" defer></script>
+    <script src="AnimationLoader.js" defer></script>
+    <script src="HiddenContent.js" defer></script>
+</body>
+</html>

@@ -96,8 +96,8 @@ body {
 .Tabs-Container {
     justify-content: center;
     box-shadow: 0 0 16px, rgba(0, 0, 0, 0.8);
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 25px;
 }
 
@@ -139,7 +139,7 @@ body {
     margin: 0;
 }
 
-ul {
+ul { /*The content*/
     padding: 0;
     margin: 0;
     display: grid;
@@ -194,15 +194,49 @@ span {
     color: #434343;   
 }
 
-@media (max-width: 800px) {
-    ul {
-        grid-template-columns: repeat(2, 1fr);
+/*mobile version*/
+@media only screen and (max-width: 800px) {
+    .Tabs-Container {
+        gap: 10px; 
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        height: 100%;
+        justify-content: center;
     }
-}
 
-@media (max-width: 500px) {
+    #tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
+        width: 100%; 
+        font-size: 16px; 
+        height: 2.5rem; 
+    }
+
+    #All, #Manga, #Manhwa, #AboutPage, #UpdateLog {
+        width: 100%; 
+        padding: 1rem;
+    }
+
     ul {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    .Title {
+        font-size: 1.8rem; 
+        text-align: center; 
+    }
+
+    body {
+        padding: 1rem;
+    }
+
+    .display {
+        flex-direction: column; 
+        gap: 20px; 
     }
 }
 

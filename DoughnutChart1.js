@@ -5,7 +5,7 @@ const DoughnutChart1 = new Chart(ctx, {
         labels: ['Manga','Manhwa'],
         datasets: [{
             label: '# of Mangas',
-            data: [12, 2],
+            data: [17, 4],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',

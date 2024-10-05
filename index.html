@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="source.js" defer></script>
     <title>Keso's Manga Recommendations!</title>
 </head>
@@ -16,17 +17,17 @@
 <body>
     <div class="Title">
         <h1>Keso's Recommended Mangas!</h1>
-        <p id="Version">version 1.0.1</p>
+        <p id="Version">version 1.0.2</p>
     </div>
 <br>
     <div class="display">
         <div class="chart">
             <h2>Number of Mangas</h2>
-            <canvas id="DoughnutChart1" width="200" height="200"></canvas>
+            <canvas id="DoughnutChart1" width="350" height="350"></canvas>
         </div>
         <div class="chart">
             <h2 >Status of Mangas</h2>
-            <canvas id="DoughnutChart2" width="200" height="200"></canvas>
+            <canvas id="DoughnutChart2" width="350" height="350"></canvas>
         </div>
     </div>
 <br>
@@ -60,7 +61,7 @@
         </li>
         <li>
             <a href="https://mangadex.org/title/1c4f1dd6-c7cc-4474-b3de-2cc9adc330c3/sensei-bokutachi-ga-sekai-wo-horoboshimasu" target="_blank">
-                <img width="200" height="320" src="Images/SenseiBokutachi.jpg" alt="Teacher, we will destroy the world!">
+                <img width="200" height="320" src="Images/SenseiBokutachiVol5.jpg" alt="Teacher, we will destroy the world!">
             </a>
             <h3>Teacher, we will destroy the world!<br><span>先生！ 僕たちが世界を滅ぼします。</span></h3>
         </li>
@@ -120,22 +121,65 @@
         </li>
         <li>
             <a href="https://mangadex.org/title/bddf8037-f53e-4cfb-a17c-b24108b955a1/boku-no-kanojo-wa-saikoudesu?tab=chapters" target="_blank">
-                <img width="200" height="320" src="Images/BokuNoKanojo.jpg" id="My Girlfriend Is the Best!">
+                <img width="200" height="320" src="Images/BokuNoKanojo.jpg" alt="My Girlfriend Is the Best!">
             </a>
             <h3>My Girlfriend Is the Best!<br><span>僕の彼女は最高です！</span></h3>
         </li>
+        <li>
+            <a href="https://mangadex.org/title/4809bb6c-1af2-41c5-9291-983027602d7f/shy" target="_blank">
+                <img width="200" height="320" src="Images/SHYVol26.jpg" alt="SHY">
+            </a>
+            <h3>SHY<br><span>シャイ</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/f4397b12-137c-426f-92ff-618ddfbad51a/marriage-toxin" target="_blank">
+                <img width="200" height="320" src="Images/MARRIAGETOXINVOL10.jpg" alt="MARRIAGETOXIN">
+            </a>
+            <h3>MARRIAGETOXIN<br><span>マリッジトキシン</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/e0ec499a-e42a-4674-9fb7-e12f6d3e5b3c/the-archmage-s-daughter" target="_blank">
+                <img width="200" height="320" src="Images/ArchmageDaughter.jpg" alt="Archmage's Daughter">
+            </a>
+            <h3>The Archmage's Daughter<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">대마법사의 딸</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/8ef11280-30bc-434b-bf61-c61e092905ac/class-de-2-banme-ni-kawaii-onna-no-ko-to-tomodachi-ni-natta" target="_blank">
+                <img width="200" height="320" src="Images/Class2Vol4.jpg" alt="Second Cutest Girl!">
+            </a>
+            <h3>I Became Friends with the Second Cutest Girl in My Class!<br><span>クラスで２番目に可愛い女の子と友だちになった</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/91b67596-9bc3-48f5-8aad-02ff520fdfa9/the-archmage-s-restaurant" target="_blank">
+                <img width="200" height="320" src="Images/ArchmageRestaurant.jpg" alt="The Archmage's Restaurant">
+            </a>
+            <h3>The Archmage's Restaurant<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">어느 마법사의 식당</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/7777c3aa-fe0f-47d6-8672-6a1d60a1a9e8/blue-orchestra" target="_blank">
+                <img width="200" height="320" src="Images/BlueOrchestraVol11.jpg" alt="Blue Orchestra">
+            </a>
+            <h3>Blue Orchestra<br><span>青のオーケストラ</span></h3>
+        </li>
+        <li>
+            <a href="https://mangadex.org/title/0aea9f43-d4a9-4bf7-bebc-550a512f9b95/shikimori-s-not-just-a-cutie" target="_blank">
+                <img width="200" height="320" src="Images/Shikimori-san.jpg" alt="Shikimori-san!">
+            </a>
+            <h3>Shikimori's Not Just a Cutie<br><span>可愛いだけじゃない式守さん</span></h3>
+        </li>
+
     </ul>
 </div>
 
-    <div id="Manga" class="hidden">
+    <div id="Manga" class="hidden content-section">
         soon
     </div>
 
-    <div id="Manhwa" class="hidden">
+    <div id="Manhwa" class="hidden content-section">
         soon
     </div>
 
-    <div id="AboutPage" class="hidden">
+    <div id="AboutPage" class="hidden content-section">
         <h1>About</h1>
         <br>
         <p>Hello! This is my mangas that I would recommend to people to read, I hope that I had minimize any suggestive stuff. <br>All these mangas or manhwas are what I have read or still reading since the past 4 years!</p>
@@ -145,6 +189,13 @@
 
     <div id="UpdateLog" class="hidden">
         <h1>Update Log</h1>
+        <br>
+        <h3><b>Version 1.0.2</b></h3>
+        (October 5, 2024) <br>
+        - Reverted the size of the donut graph <br>
+        - Added 5 Mangas and 2 Manhwas (21 in Total)<br>
+        - Made the website mobile friendly<br>
+        - Minor bug fixes<br>
         <br>
         <h3><b>Version 1.0.1</b></h3>
         (October 4, 2024) <br>

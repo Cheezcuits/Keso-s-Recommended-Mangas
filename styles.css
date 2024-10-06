@@ -52,7 +52,6 @@ html{
     animation-timing-function: ease-out;
     margin-bottom: 0.25rem;
     color:  #434343;
-    text-shadow: 0 0 16px, rgba(0, 0, 0, 0.9);
 }
 
 #Version {
@@ -172,7 +171,7 @@ span {
 
 #AboutPage{
     width: 1000px;
-    height: 300px;
+    height: 80%;
 }
 
 #UpdateLog{
@@ -195,7 +194,7 @@ span {
 }
 
 /*mobile version*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 720px) {
     .Tabs-Container {
         gap: 10px; 
         grid-template-columns: repeat(3, 1fr);
@@ -218,7 +217,7 @@ span {
     ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
-        gap: 10px;
+        gap: 20px;
     }
 
     li {
@@ -235,8 +234,19 @@ span {
     }
 
     .display {
+        display: grid;
         flex-direction: column; 
         gap: 20px; 
+    }
+    
+    img{
+        width: 130px;
+        height:208px;
+    }
+
+    h3{
+        width: 65%;
+        height:65%;
     }
 }
 
@@ -246,7 +256,7 @@ span {
 
 @keyframes slideUp {
     from {
-        transform: translateY(100%);
+        transform: translateY(20px);
         opacity: 0;
     }
     to {
@@ -256,7 +266,7 @@ span {
 }
 
 .slide-up {
-    animation: slideUp 1s ease-out;
+    animation: slideUp 0.5s ease-out;
     opacity: 1;
     transform: translateY(0);
 }
@@ -264,6 +274,6 @@ span {
 .hidden {
     display: none;
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(10px);
     transition: opacity 0.5s, transform 0.5s;
 }

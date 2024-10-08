@@ -240,13 +240,14 @@ span {
     }
     
     img{
-        width: 130px;
-        height:208px;
+        width: 150px;
+        height:230px;
     }
 
     h3{
         width: 65%;
         height:65%;
+        text-align: center;
     }
 }
 

@@ -1,4 +1,4 @@
-const tabs = document.querySelectorAll('#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5');
+const tabs = document.querySelectorAll('#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5, #tabs-6');
 tabs.forEach(tab => {
     tab.addEventListener('click', function() {
         if (this.classList.contains('active')) {

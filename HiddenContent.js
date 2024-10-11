@@ -1,5 +1,5 @@
-const tabContentIds = ['All', 'Manga', 'Manhwa', 'AboutPage', 'UpdateLog'];
-const tabIds = ['tabs-1', 'tabs-2', 'tabs-3', 'tabs-4', 'tabs-5'];
+const tabContentIds = ['All', 'Manga', 'Manhwa', 'AboutPage', 'UpdateLog','Other'];
+const tabIds = ['tabs-1', 'tabs-2', 'tabs-3', 'tabs-4', 'tabs-5','tabs-6'];
 
 function hideAllContents() {
     tabContentIds.forEach(id => {

@@ -94,20 +94,20 @@ body {
 
 .Tabs-Container {
     justify-content: center;
-    box-shadow: 0 0 16px, rgba(0, 0, 0, 0.8);
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
+    
 }
 
-#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
+#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5, #tabs-6 {
     background-color: transparent;
     border-radius: 15px;
     border-color: transparent;
     border: 2px solid #434343;
     width: 14.6rem;
     height: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.25rem;
     color: #434343;
     font-size: 20px;
     animation-duration: 1s;
@@ -115,18 +115,18 @@ body {
     animation-timing-function: ease-out;
 }
 
-#tabs-1:hover, #tabs-2:hover, #tabs-3:hover, #tabs-4:hover, #tabs-5:hover {
+#tabs-1:hover, #tabs-2:hover, #tabs-3:hover, #tabs-4:hover, #tabs-5:hover, #tabs-6:hover {
     background-color: #434343;
     color: aliceblue;
 }
 
-#tabs-1.active, #tabs-2.active, #tabs-3.active, #tabs-4.active, #tabs-5.active {
+#tabs-1.active, #tabs-2.active, #tabs-3.active, #tabs-4.active, #tabs-5.active, #tabs-6.active {
     background-color: #434343;
     color: aliceblue;
     transform: translateY(-10px);
 }
 
-#tabs-1:active, #tabs-2:active, #tabs-3:active, #tabs-4:active, #tabs-5:active {
+#tabs-1:active, #tabs-2:active, #tabs-3:active, #tabs-4:active, #tabs-5:active, #tabs-6:active {
     background-color: #434343;
     color: aliceblue;
     transform: translateY(-10px);
@@ -142,11 +142,15 @@ ul { /*The content*/
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-    justify-items: center;
+    justify-content: center;
     list-style-type: none;
     text-align: center;
+}
+
+#SourceList{
+    grid-template-columns: repeat(2, 1fr);
 }
 
 li {
@@ -157,6 +161,7 @@ li {
     align-items: center;
     margin: 10px;
     width: 100%;
+    justify-content: top;
 }
 
 li:hover {
@@ -174,12 +179,12 @@ span {
     height: 80%;
 }
 
-#UpdateLog{
+#UpdateLog, #Other{
     width:1000px;
     height: 80%;
 }
 
-#All, #Manga, #Manhwa, #AboutPage, #UpdateLog {
+#All, #Manga, #Manhwa, #AboutPage, #UpdateLog, #Other {
     flex-direction: row;
     justify-content: left;
     background-color: transparent;
@@ -187,11 +192,11 @@ span {
     border-color: transparent;
     padding-top: 2rem;
     padding: 2rem;
-    padding-bottom: 2rem;
     line-height: 0.6cm;
     margin-bottom: 1rem;
     color: #434343;   
 }
+
 
 /*mobile version*/
 @media only screen and (max-width: 720px) {
@@ -203,13 +208,13 @@ span {
         justify-content: center;
     }
 
-    #tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
+    #tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5, #tabs-6 {
         width: 100%; 
         font-size: 16px; 
         height: 2.5rem; 
     }
 
-    #All, #Manga, #Manhwa, #AboutPage, #UpdateLog {
+    #All, #Manga, #Manhwa, #AboutPage, #UpdateLog, #Other {
         width: 100%; 
         padding: 1rem;
     }
@@ -219,7 +224,7 @@ span {
         grid-template-columns: repeat(2, 1fr); 
         gap: 20px;
     }
-
+    
     li {
         width: 100%;
     }
@@ -244,6 +249,11 @@ span {
         height:230px;
     }
 
+    #SourceList{
+        width:95%;
+        height:95%;
+    }
+
     h3{
         width: 65%;
         height:65%;
@@ -251,7 +261,7 @@ span {
     }
 }
 
-#AboutPage, #UpdateLog {
+#AboutPage, #UpdateLog, #Other {
     border: 2px solid #434343;
 }
 

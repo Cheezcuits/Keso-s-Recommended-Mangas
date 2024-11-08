@@ -5,7 +5,7 @@ const DoughnutChart2 = new Chart(ctx2, {
         labels: ['Completed','Ongoing','Hiatus',],
         datasets: [{
             label: 'Status of Mangas',
-            data: [17, 23, 3,],
+            data: [18, 29, 3,],
             backgroundColor: [
                 'rgba(54, 162, 235, 0.2)', //blue (2)
                 'rgba(75, 192, 192, 0.2)', //green (4)

@@ -17,14 +17,13 @@
     <script src="DoughnutChart2.js" defer></script>
     <script src="AnimationLoader.js" defer></script>
     <script src="HiddenContent.js" defer></script>
-    <script src="script.js" defer></script>
     <title>Keso's Manga Recommendations!</title>
 </head>
 
 <body>
     <div class="Title">
         <h1 style="text-align: center;">Keso's Recommended Mangas!</h1>
-        <p id="Version">version 1.1.3c</p>
+        <p id="Version">version 1.2.0</p>
     </div>
 <p style="animation-name: slideFromTop; animation-duration: 1s; animation-timing-function: ease-out; margin-bottom: 0.25rem; color:  #434343;">Read "About Page" first!</p>
     <div class="display">
@@ -37,7 +36,6 @@
             <canvas id="DoughnutChart2" width="350" height="350"></canvas>
         </div>
     </div>
-<div id="Tabs-Container"></div>
 <br>
     <div class="Tabs-Container">
             <button id="tabs-1" class="animated">All</button>
@@ -55,686 +53,1462 @@
     <br>
     <ul>
         <li>
-            <a href="https://mangadex.org/title/9d9b04ad-9a83-49f4-8ae4-a9a3780fe9c0/sakamoto-days" target="_blank">
-                <img width="200" height="320" src="Images/SakamotoDaysVol19.jpg" alt="Sakamoto Days">
-            </a>
-            <h3>Sakamoto Days<br><span>サカモト デイズ</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/9d9b04ad-9a83-49f4-8ae4-a9a3780fe9c0/sakamoto-days" target="_blank">
+                <img width="200" height="320" src="Images/SakamotoDaysVol20.jpg" alt="Sakamoto Days">
+                <div class="TextHover">
+                    <h3>Sakamoto Days</h3>
+                    <p>サカモト デイズ</p>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/141609b6-cf86-4266-904c-6648f389cdc9/ruridragon" target="_blank">
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/141609b6-cf86-4266-904c-6648f389cdc9/ruridragon" target="_blank">
                 <img width="200" height="320" src="Images/RuriDragon.jpg" alt="RuriDragon">
-            </a>
-            <h3>RuriDragon<br><span>ルリドラゴン</span></h3>
+                <div class="TextHover">
+                    <h3>RuriDragon</h3>
+                    <p>ルリドラゴン</p>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/68112dc1-2b80-4f20-beb8-2f2a8716a430/dandadan" target="_blank">
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/68112dc1-2b80-4f20-beb8-2f2a8716a430/dandadan" target="_blank">
                 <img width="200" height="320" src="Images/DandadanVol18.jpg" alt="Dandadan">
-            </a>
-            <h3>Dandadan<br><span>ダンダダン</span></h3>
+                <div class="TextHover">
+                    <h3>Dandadan</h3>
+                    <p>ダンダダン</p>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/1c4f1dd6-c7cc-4474-b3de-2cc9adc330c3/sensei-bokutachi-ga-sekai-wo-horoboshimasu" target="_blank">
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/1c4f1dd6-c7cc-4474-b3de-2cc9adc330c3/sensei-bokutachi-ga-sekai-wo-horoboshimasu" target="_blank">
                 <img width="200" height="320" src="Images/SenseiBokutachiVol5.jpg" alt="Teacher, we will destroy the world!">
-            </a>
-            <h3>Teacher, we will destroy the world!<br><span>先生！ 僕たちが世界を滅ぼします。</span></h3>
+                <div class="TextHover">
+                    <h3>Teacher, we will destroy the world!</h3>
+                    <p>先生！ 僕たちが世界を滅ぼします。</p>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/f8f3f045-01b5-4216-8f41-d947d8b448b0/youchien-wars?tab=chapters" target="_blank">
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/f8f3f045-01b5-4216-8f41-d947d8b448b0/youchien-wars?tab=chapters" target="_blank">
                 <img width="200" height="320" src="Images/YouchienWarsVol13.jpg" alt="Kindergarten WARS">
-            </a>
-            <h3>Kindergarten WARS<br><span>幼稚園WARS</span></h3>
+                <div class="TextHover">
+                    <h3>Kindergarten WARS</h3>
+                    <p>幼稚園WARS</p>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/ce7cd7b0-e595-4f0d-98e8-447da10d652d/mission-yozakura-family" target="_blank">
-                <img width="200" height="320" src="Images/YozakuraFamilyVol27.jpg" alt="Yozakura Family">
-            </a>
-            <h3>Mission: Yozakura Family<br><span>夜桜さんちの大作戦</span></h3>
-        </li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/ce7cd7b0-e595-4f0d-98e8-447da10d652d/mission-yozakura-family" target="_blank">
+                <img width="200" height="320" src="Images/YozakuraFamilyVol28.jpg" alt="Yozakura Family">
+                <div class="TextHover">
+                    <h3>Mission: Yozakura Family</h3>
+                    <p>夜桜さんちの大作戦</p>
+                </div>
+                </a>
+            </div>
+        </li>        
         <li>
-            <a href="https://mangadex.org/title/418791c0-35cf-4f87-936b-acd9cddf0989/kaoru-hana-wa-rin-to-saku" target="_blank">
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/418791c0-35cf-4f87-936b-acd9cddf0989/kaoru-hana-wa-rin-to-saku" target="_blank">
                 <img width="200" height="320" src="Images/FragrantFlowerVol15.jpg" alt="The Fragrant Flower Blooms with Dignity">
-            </a>
-            <h3>The Fragrant Flower Blooms with Dignity<br><span>薫る花は凛と咲く</span></h3>
+                <div class="TextHover">
+                    <h3>The Fragrant Flower Blooms with Dignity</h3>
+                    <p>薫る花は凛と咲く</p>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/cb676e05-8e6e-4ec4-8ba0-d3cb4f033cfa/ending-maker" target="_blank">
+            <div class="ImgCont">
+                <div class="dog-ear-3"></div>
+                <a href="https://mangadex.org/title/cb676e05-8e6e-4ec4-8ba0-d3cb4f033cfa/ending-maker" target="_blank">
                 <img width="200" height="320" src="Images/EndingMaker.jpg" alt="Ending Maker">
-            </a>
-            <h3>Ending Maker<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">엔딩 메이커</span></h3>
+                <div class="TextHover">
+                    <h3>Ending Maker</h3>
+                    <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">엔딩 메이커</p>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/f26c0ae5-c8f6-4630-979e-9a5d310bd795/i-only-want-to-beat-you?tab=chapters" target="_blank">
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/f26c0ae5-c8f6-4630-979e-9a5d310bd795/i-only-want-to-beat-you?tab=chapters" target="_blank">
                 <img width="200" height="320" src="Images/OhRoji.jpg" alt="I Only Want To Beat You">
-            </a>
-            <h3>I Only Want to Beat You, Oh Roji<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">오로지 너를 이기고 싶어</span></h3>
+                <div class="TextHover">
+                    <h3>I Only Want to Beat You, Oh Roji</h3>
+                    <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">오로지 너를 이기고 싶어</p>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/fed8c19c-9dec-4ef1-a187-af2c0c9cf17c/will-you-marry-me-again-if-you-are-reborn?tab=chapters" target="_blank">
-                <img width="200" height="320" src="Images/MarryReborn.jpg"alt="Will You Marry Me Again If You Are Reborn?"/>
-            </a>
-            <h3>Will You Marry Me Again If You Are Reborn?<br><span>生まれ変わってもまた、私と結婚してくれますか</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/fed8c19c-9dec-4ef1-a187-af2c0c9cf17c/will-you-marry-me-again-if-you-are-reborn?tab=chapters" target="_blank">
+                    <img width="200" height="320" src="Images/MarryReborn.jpg" alt="Will You Marry Me Again If You Are Reborn?">
+                    <div class="TextHover">
+                        <h3>Will You Marry Me Again If You Are Reborn?</h3>
+                        <p>生まれ変わってもまた、私と結婚してくれますか</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/1b920c57-b359-422c-8d6d-1022c79cc8bb/can-you-fall-in-love-with-the-skeleton?tab=chapters" target="_blank">
-                <img width="200" height="320" src="Images/LoveSkeleton.jpg" alt="Can You Fall in Love With the Skeleton?">
-            </a>
-            <h3>Can You Fall in Love With the Skeleton?<br><span>骸骨と恋はできるのか？</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/1b920c57-b359-422c-8d6d-1022c79cc8bb/can-you-fall-in-love-with-the-skeleton?tab=chapters" target="_blank">
+                    <img width="200" height="320" src="Images/LoveSkeleton.jpg" alt="Can You Fall in Love With the Skeleton?">
+                    <div class="TextHover">
+                        <h3>Can You Fall in Love With the Skeleton?</h3>
+                        <p>骸骨と恋はできるのか？</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/65263bf9-4f87-4513-b72f-ad6436b3911c/otaku-ni-koi-wa-muzukashii" target="_blank">
-                <img width="200" height="320" src="Images/Wotakoi.jpg" alt="Wotakoi">
-            </a>
-            <h3>Wotakoi: Love Is Hard for Otaku<br><span>ヲタクに恋は難しい</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/65263bf9-4f87-4513-b72f-ad6436b3911c/otaku-ni-koi-wa-muzukashii" target="_blank">
+                    <img width="200" height="320" src="Images/Wotakoi.jpg" alt="Wotakoi">
+                    <div class="TextHover">
+                        <h3>Wotakoi: Love Is Hard for Otaku</h3>
+                        <p>ヲタクに恋は難しい</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/7785688a-fc62-49f3-8891-946877f01878/koibito-tutorial" target="_blank">
-                <img width="200" height="320" src="Images/LoveTutorial.png" alt="Love Tutorial">
-            </a>
-            <h3>Love Tutorial<br><span>恋人チュートリアル</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/7785688a-fc62-49f3-8891-946877f01878/koibito-tutorial" target="_blank">
+                    <img width="200" height="320" src="Images/LoveTutorial.png" alt="Love Tutorial">
+                    <div class="TextHover">
+                        <h3>Love Tutorial</h3>
+                        <p>恋人チュートリアル</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/bddf8037-f53e-4cfb-a17c-b24108b955a1/boku-no-kanojo-wa-saikoudesu?tab=chapters" target="_blank">
-                <img width="200" height="320" src="Images/BokuNoKanojo.jpg" alt="My Girlfriend Is the Best!">
-            </a>
-            <h3>My Girlfriend Is the Best!<br><span>僕の彼女は最高です！</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/bddf8037-f53e-4cfb-a17c-b24108b955a1/boku-no-kanojo-wa-saikoudesu?tab=chapters" target="_blank">
+                    <img width="200" height="320" src="Images/BokuNoKanojo.jpg" alt="My Girlfriend Is the Best!">
+                    <div class="TextHover">
+                        <h3>My Girlfriend Is the Best!</h3>
+                        <p>僕の彼女は最高です！</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/4809bb6c-1af2-41c5-9291-983027602d7f/shy" target="_blank">
-                <img width="200" height="320" src="Images/SHYVol27.jpg" alt="SHY">
-            </a>
-            <h3>SHY<br><span>シャイ</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/4809bb6c-1af2-41c5-9291-983027602d7f/shy" target="_blank">
+                    <img width="200" height="320" src="Images/SHYVol28.jpg" alt="SHY">
+                    <div class="TextHover">
+                        <h3>SHY</h3>
+                        <p>シャイ</p>
+                    </div>
+                </a>
+            </div>
+        </li>           
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/f4397b12-137c-426f-92ff-618ddfbad51a/marriage-toxin" target="_blank">
+                    <img width="200" height="320" src="Images/MARRIAGETOXINVOL11.jpg" alt="MARRIAGETOXIN">
+                    <div class="TextHover">
+                        <h3>MARRIAGE TOXIN</h3>
+                        <p>マリッジトキシン</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/f4397b12-137c-426f-92ff-618ddfbad51a/marriage-toxin" target="_blank">
-                <img width="200" height="320" src="Images/MARRIAGETOXINVOL11.jpg" alt="MARRIAGETOXIN">
-            </a>
-            <h3>MARRIAGE TOXIN<br><span>マリッジトキシン</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/e0ec499a-e42a-4674-9fb7-e12f6d3e5b3c/the-archmage-s-daughter" target="_blank">
+                    <img width="200" height="320" src="Images/ArchmageDaughter.jpg" alt="Archmage's Daughter">
+                    <div class="TextHover">
+                        <h3>The Archmage's Daughter</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">대마법사의 딸</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/e0ec499a-e42a-4674-9fb7-e12f6d3e5b3c/the-archmage-s-daughter" target="_blank">
-                <img width="200" height="320" src="Images/ArchmageDaughter.jpg" alt="Archmage's Daughter">
-            </a>
-            <h3>The Archmage's Daughter<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">대마법사의 딸</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/8ef11280-30bc-434b-bf61-c61e092905ac/class-de-2-banme-ni-kawaii-onna-no-ko-to-tomodachi-ni-natta" target="_blank">
+                    <img width="200" height="320" src="Images/Class2Vol5.jpg" alt="Second Cutest Girl!">
+                    <div class="TextHover">
+                        <h3>I Became Friends with the Second Cutest Girl in My Class!</h3>
+                        <p>クラスで２番目に可愛い女の子と友だちになった</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/8ef11280-30bc-434b-bf61-c61e092905ac/class-de-2-banme-ni-kawaii-onna-no-ko-to-tomodachi-ni-natta" target="_blank">
-                <img width="200" height="320" src="Images/Class2Vol5.jpg" alt="Second Cutest Girl!">
-            </a>
-            <h3>I Became Friends with the Second Cutest Girl in My Class!<br><span>クラスで２番目に可愛い女の子と友だちになった</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/91b67596-9bc3-48f5-8aad-02ff520fdfa9/the-archmage-s-restaurant" target="_blank">
+                    <img width="200" height="320" src="Images/ArchmageRestaurant.jpg" alt="The Archmage's Restaurant">
+                    <div class="TextHover">
+                        <h3>The Archmage's Restaurant</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">어느 마법사의 식당</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/91b67596-9bc3-48f5-8aad-02ff520fdfa9/the-archmage-s-restaurant" target="_blank">
-                <img width="200" height="320" src="Images/ArchmageRestaurant.jpg" alt="The Archmage's Restaurant">
-            </a>
-            <h3>The Archmage's Restaurant<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">어느 마법사의 식당</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/7777c3aa-fe0f-47d6-8672-6a1d60a1a9e8/blue-orchestra" target="_blank">
+                    <img width="200" height="320" src="Images/BlueOrchestraVol11.jpg" alt="Blue Orchestra">
+                    <div class="TextHover">
+                        <h3>Blue Orchestra</h3>
+                        <p>青のオーケストラ</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/7777c3aa-fe0f-47d6-8672-6a1d60a1a9e8/blue-orchestra" target="_blank">
-                <img width="200" height="320" src="Images/BlueOrchestraVol11.jpg" alt="Blue Orchestra">
-            </a>
-            <h3>Blue Orchestra<br><span>青のオーケストラ</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/0aea9f43-d4a9-4bf7-bebc-550a512f9b95/shikimori-s-not-just-a-cutie" target="_blank">
+                    <img width="200" height="320" src="Images/Shikimori-san.jpg" alt="Shikimori-san!">
+                    <div class="TextHover">
+                        <h3>Shikimori's Not Just a Cutie</h3>
+                        <p>可愛いだけじゃない式守さん</p>
+                    </div>
+                </a>
+            </div>
+        </li>                
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/38179337-1640-4927-8851-9bedd8d19e82/shiotaiou-no-sato-san-ga-ore-ni-dake-amai" target="_blank">
+                    <img width="200" height="320" src="Images/SaltGodSato-sanVol9.jpg" alt="Salt-God Sato-San">
+                    <div class="TextHover">
+                        <h3>Aren’t You Too Sweet Salt-God Sato-San?</h3>
+                        <p>塩対応の佐藤さんが俺にだけ甘い</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/0aea9f43-d4a9-4bf7-bebc-550a512f9b95/shikimori-s-not-just-a-cutie" target="_blank">
-                <img width="200" height="320" src="Images/Shikimori-san.jpg" alt="Shikimori-san!">
-            </a>
-            <h3>Shikimori's Not Just a Cutie<br><span>可愛いだけじゃない式守さん</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/d7037b2a-874a-4360-8a7b-07f2899152fd/mairimashita-iruma-kun" target="_blank">
+                    <img width="200" height="320" src="Images/IrumaKunVol41.jpg" alt="Mairimashita! Iruma-kun">
+                    <div class="TextHover">
+                        <h3>Welcome to Demon School! Iruma-kun</h3>
+                        <p>魔入りました！入間くん</p>
+                    </div>
+                </a>
+            </div>
+        </li>        
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/d5c0896a-d4d5-4ee0-8bf1-a113cb1b86ac/academy-s-undercover-professor?tab=chapters" target="_blank">
+                    <img width="200" height="320" src="https://cdn.myanimelist.net/images/manga/4/287318l.jpg?_gl=1*1onaxfq*_gcl_au*MTE0MjgyNTE4My4xNzIzNDcxNTU2*_ga*MTYxNDcwOTYwOS4xNzIzNDcxNTQ2*_ga_26FEP9527K*MTcyODIwNDYxMi4xMy4xLjE3MjgyMDU4MjguNTguMC4w" alt="Academy's Undercover Professor">
+                    <div class="TextHover">
+                        <h3>Academy's Undercover Professor</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">아카데미에 위장취업당했다</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/38179337-1640-4927-8851-9bedd8d19e82/shiotaiou-no-sato-san-ga-ore-ni-dake-amai" target="_blank">
-                <img width="200" height="320" src="Images/SaltGodSato-sanVol9.jpg" alt="Salt-God Sato-San">
-            </a>
-            <h3>Aren’t You Too Sweet Salt-God Sato-San?<br><span>塩対応の佐藤さんが俺にだけ甘い</span></h3>
-        </li> 
-        <li>
-            <a href="https://mangadex.org/title/d7037b2a-874a-4360-8a7b-07f2899152fd/mairimashita-iruma-kun" target="_blank">
-                <img width="200" height="320" src="Images/IrumaKunVol40.jpg" alt="Mairimashita! Iruma-kun">
-            </a>
-            <h3>Welcome to Demon School! Iruma-kun<br><span>魔入りました！入間くん</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/6d6d9fda-5cd3-40ac-948b-776b1a1a0eb1/suki-na-ko-ga-megane-wo-wasureta" target="_blank">
+                    <img width="200" height="320" src="Images/SukinaKo.jpg" alt="The Girl I Like Forgot Her Glasses">
+                    <div class="TextHover">
+                        <h3>The Girl I Like Forgot Her Glasses</h3>
+                        <p>好きな子がめがねを忘れた</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/d5c0896a-d4d5-4ee0-8bf1-a113cb1b86ac/academy-s-undercover-professor?tab=chapters" target="_blank">
-                <img width="200" height="320" src="https://cdn.myanimelist.net/images/manga/4/287318l.jpg?_gl=1*1onaxfq*_gcl_au*MTE0MjgyNTE4My4xNzIzNDcxNTU2*_ga*MTYxNDcwOTYwOS4xNzIzNDcxNTQ2*_ga_26FEP9527K*MTcyODIwNDYxMi4xMy4xLjE3MjgyMDU4MjguNTguMC4w" alt="Academy's Undercover Professor">
-            </a>
-            <h3>Academy's Undercover Professor<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">아카데미에 위장취업당했다</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/cddd1849-ab36-4304-8103-06ba4062b5e6/kubo-san-wa-mob-wo-yurusanai" target="_blank">
+                    <img width="200" height="320" src="Images/Kubo-san.jpg" alt="Kubo-san wa Mob wo Yurusanai">
+                    <div class="TextHover">
+                        <h3>Kubo-san wa Mob wo Yurusanai</h3>
+                        <p>久保さんは僕を許さない</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/6d6d9fda-5cd3-40ac-948b-776b1a1a0eb1/suki-na-ko-ga-megane-wo-wasureta" target="_blank">
-                <img width="200" height="320" src="Images/SukinaKo.jpg" alt="The Girl I Like Forgot Her Glasses">
-            </a>
-            <h3>The Girl I Like Forgot Her Glasses<br><span>好きな子がめがねを忘れた</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/37f5cce0-8070-4ada-96e5-fa24b1bd4ff9/kaguya-sama-love-is-war?tab=chapters" target="_blank">
+                    <img width="200" height="320" src="Images/Kaguya-sama.jpg" alt="Kaguya-sama: Love is War">
+                    <div class="TextHover">
+                        <h3>Kaguya-sama: Love is War</h3>
+                        <p>かぐや様は告らせたい～天才たちの恋愛頭脳戦～</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/cddd1849-ab36-4304-8103-06ba4062b5e6/kubo-san-wa-mob-wo-yurusanai" target="_blank">
-                <img width="200" height="320" src="Images/Kubo-san.jpg" alt="Kubo-san wa Mob wo Yurusanai">
-            </a>
-            <h3>Kubo-san wa Mob wo Yurusanai<br><span>久保さんは僕を許さない</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/b2ae13e3-bea1-4f11-bfbe-4269f66e74f8/the-return-of-the-8th-class-mage" target="_blank">
+                    <img width="200" height="320" src="Images/8thClassMagician.jpg" alt="The Return of the 8th Class Mage">
+                    <div class="TextHover">
+                        <h3>The Return of the 8th Class Mage</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">8클래스 마법사의 회귀</p>
+                    </div>
+                </a>
+            </div>
+        </li>        
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/26c8f00a-3925-4f22-ac21-83145be2b733/the-lazy-lord-masters-the-sword?tab=chapters" target="_blank">
+                    <img width="200" height="320" src="Images/DeadbeatNobleVol3.jpg" alt="Reformation of the Deadbeat Noble">
+                    <div class="TextHover">
+                        <h3>Reformation of the Deadbeat Noble</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">나태 공자, 노력 천재 되다</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/37f5cce0-8070-4ada-96e5-fa24b1bd4ff9/kaguya-sama-love-is-war?tab=chapters" target="_blank">
-                <img width="200" height="320" src="Images/Kaguya-sama.jpg" alt="Kaguya-sama: Love is War">
-            </a>
-            <h3>Kaguya-sama: Love is War<br><span>かぐや様は告らせたい～天才たちの恋愛頭脳戦～</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/4a973243-952e-44d7-a50f-883b4b7c9cc2/sss-class-revival-hunter" target="_blank">
+                    <img width="200" height="320" src="Images/SSSClassSuicideHunterVol3.jpg" alt="SSS-Class Suicide Hunter">
+                    <div class="TextHover">
+                        <h3>SSS-Class Suicide Hunter</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">SSS급 죽어야 사는 헌터</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/b2ae13e3-bea1-4f11-bfbe-4269f66e74f8/the-return-of-the-8th-class-mage" target="_blank">
-                <img width="200" height="320" src="Images/8thClassMagician.jpg" alt="The Return of the 8th Class Mage">
-            </a>
-            <h3>The Return of the 8th Class Mage<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">8클래스 마법사의 회귀</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/5f6de04c-8465-4bb1-81a6-c71f8ccbd08e/bizarre-restaurant" target="_blank">
+                    <img width="200" height="320" src="Images/BizzareRestaurant.png" alt="Bizarre Restaurant">
+                    <div class="TextHover">
+                        <h3>Bizarre Restaurant</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">괴식식당</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/26c8f00a-3925-4f22-ac21-83145be2b733/the-lazy-lord-masters-the-sword?tab=chapters" target="_blank">
-                <img width="200" height="320" src="Images/DeadbeatNobleVol3.jpg" alt="Reformation of the Deadbeat Noble">
-            </a>
-            <h3>Reformation of the Deadbeat Noble<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">나태 공자, 노력 천재 되다</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/10fab94e-2227-47e2-b059-f4762eb5ca4e/jii-san-to-baa-san-wakagaeru" target="_blank">
+                    <img width="200" height="320" src="Images/JiisanBaasan.jpg" alt="A Story About a Grandpa and Grandma Who Returned Back to Their Youth">
+                    <div class="TextHover">
+                        <h3>A Story About a Grandpa and Grandma Who Returned Back to Their Youth</h3>
+                        <p>おじいさんとおばあさんが若返った話。</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/4a973243-952e-44d7-a50f-883b4b7c9cc2/sss-class-revival-hunter" target="_blank">
-                <img width="200" height="320" src="Images/SSSClassSuicideHunterVol3.jpg" alt="SSS-Class Suicide Hunter">
-            </a>
-            <h3>SSS-Class Suicide Hunter<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">SSS급 죽어야 사는 헌터</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/c7b8d146-b3f0-49e2-8292-c2878043864d/classmate-no-moto-idol-ga-tonikaku-kyodou-fushin-nan-desu" target="_blank">
+                    <img width="200" height="320" src="Images/SuspiciousIdolVol3.jpg" alt="The Idol Girl in My Class is Acting Suspiciously">
+                    <div class="TextHover">
+                        <h3>The Idol Girl in My Class is Acting Suspiciously</h3>
+                        <p>おじいさんとおばあさんが若返った話。</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/5f6de04c-8465-4bb1-81a6-c71f8ccbd08e/bizarre-restaurant" target="_blank">
-                <img width="200" height="320" src="Images/BizzareRestaurant.png" alt="Bizarre Restaurant">
-            </a>
-            <h3>Bizarre Restaurant<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">괴식식당</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/40c058a2-430e-4ced-b663-369dcf38583f/gokurakugai" target="_blank">
+                    <img width="200" height="320" src="Images/Gokuragukai.jpg" alt="Gokuragukai">
+                    <div class="TextHover">
+                        <h3>Gokuragukai</h3>
+                        <p>極楽街</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/10fab94e-2227-47e2-b059-f4762eb5ca4e/jii-san-to-baa-san-wakagaeru" target="_blank">
-                <img width="200" height="320" src="Images/JiisanBaasan.jpg" alt="A Story About a Grandpa and Grandma Who Returned Back to Their Youth">
-            </a>
-            <h3>A Story About a Grandpa and Grandma Who Returned Back to Their Youth<br><span>おじいさんとおばあさんが若返った話。</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/f43aab98-8bfe-4275-97cc-9a7b7635eb80/rikei-ga-koi-ni-ochita-no-de-shoumei-shitemita" target="_blank">
+                    <img width="200" height="320" src="Images/RikeKoiVol17.jpg" alt="Science Fell in Love, so I Tried to Prove It">
+                    <div class="TextHover">
+                        <h3>Science Fell in Love, so I Tried to Prove It</h3>
+                        <p>理系が恋に落ちたので証明してみた。</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/c7b8d146-b3f0-49e2-8292-c2878043864d/classmate-no-moto-idol-ga-tonikaku-kyodou-fushin-nan-desu" target="_blank">
-                <img width="200" height="320" src="Images/SuspiciousIdolVol3.jpg" alt="The Idol Girl in My Class is Acting Suspiciously">
-            </a>
-            <h3>The Idol Girl in My Class is Acting Suspiciously<br><span>おじいさんとおばあさんが若返った話。</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/1dc3ebf9-c86c-431c-bcca-5e35ac124f28/lout-of-count-s-family" target="_blank">
+                    <img width="200" height="320" src="Images/TrashCount.png" alt="Trash of the Count's Family">
+                    <div class="TextHover">
+                        <h3>Trash of the Count's Family</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">백작가의 망나니가 되었다</p>
+                    </div>
+                </a>
+            </div>
+        </li>        
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/f19ee5ce-5b4a-4808-ba31-9374fa7900c2/medical-return" target="_blank">
+                    <img width="200" height="320" src="Images/MedicalRebirth.png" alt="Medical Rebirth">
+                    <div class="TextHover">
+                        <h3>Medical Rebirth</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">메디컬 환생</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/40c058a2-430e-4ced-b663-369dcf38583f/gokurakugai" target="_blank">
-                <img width="200" height="320" src="Images/Gokuragukai.jpg" alt="Gokuragukai">
-            </a>
-            <h3>Gokuragukai<br><span>極楽街</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/ccc174c5-715c-446e-b115-41ae79e1f268/tourigakari-ni-wanpointo-adobaisu-shite-iku-taipu-no-yankii" target="_blank">
+                    <img width="200" height="320" src="Images/DeliquentLifeHacks.jpg" alt="A Delinquent's Life Hacks">
+                    <div class="TextHover">
+                        <h3>A Delinquent's Life Hacks</h3>
+                        <p>通りがかりにワンポイントアドバイスしていくタイプのヤンキー</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/f43aab98-8bfe-4275-97cc-9a7b7635eb80/rikei-ga-koi-ni-ochita-no-de-shoumei-shitemita" target="_blank">
-                <img width="200" height="320" src="Images/RikeKoiVol17.jpg" alt="Science Fell in Love, so I Tried to Prove It">
-            </a>
-            <h3>Science Fell in Love, so I Tried to Prove It<br><span>理系が恋に落ちたので証明してみた。</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/2590f6b1-2188-477c-b31e-f5090c583ffd/osake-wa-fuufu-ni-natte-kara" target="_blank">
+                    <img width="200" height="320" src="Images/AlcoholCouple.png" alt="Alcohol Is for Married Couples">
+                    <div class="TextHover">
+                        <h3>Alcohol Is for Married Couples</h3>
+                        <p>お酒は夫婦になってから</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/1dc3ebf9-c86c-431c-bcca-5e35ac124f28/lout-of-count-s-family" target="_blank">
-                <img width="200" height="320" src="Images/TrashCount.png" alt="Trash of the Count's Family">
-            </a>
-            <h3>Trash of the Count's Family<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">백작가의 망나니가 되었다</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/17ce37ea-1cda-4429-b062-c4b627814225/owari-no-seraph" target="_blank">
+                    <img width="200" height="320" src="Images/OwariNoSeraph.jpg" alt="Seraph of the End: Vampire Reign">
+                    <div class="TextHover">
+                        <h3>Seraph of the End: Vampire Reign</h3>
+                        <p>お酒は夫婦になってから</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/f19ee5ce-5b4a-4808-ba31-9374fa7900c2/medical-return" target="_blank">
-                <img width="200" height="320" src="Images/MedicalRebirth.png" alt="Medical Rebirth">
-            </a>
-            <h3>Medical Rebirth<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">메디컬 환생</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/dee582b2-2633-4287-86c5-e7a9e51e8bba/yuusha-goikkou-no-kaerimichi" target="_blank">
+                    <img width="200" height="320" src="Images/YuushaGoikkou.jpg" alt="The Hero's Party on their Way Back Home">
+                    <div class="TextHover">
+                        <h3>The Hero's Party on their Way Back Home</h3>
+                        <p>勇者ご一行の帰り道</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/ccc174c5-715c-446e-b115-41ae79e1f268/tourigakari-ni-wanpointo-adobaisu-shite-iku-taipu-no-yankii" target="_blank">
-                <img width="200" height="320" src="Images/DeliquentLifeHacks.jpg" alt="A Delinquent's Life Hacks">
-            </a>
-            <h3>A Delinquent's Life Hacks<br><span>通りがかりにワンポイントアドバイスしていくタイプのヤンキー</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/f7d3a91a-f47a-43ce-9a2c-4da813b15eea/my-dog-becomes-a-human" target="_blank">
+                    <img width="200" height="320" src="Images/DogBecomesHumanVol2.jpg" alt="My Dog Becomes a Human">
+                    <div class="TextHover">
+                        <h3>My Dog Becomes a Human</h3>
+                        <p>ポン太がヒトになりまして。</p>
+                    </div>
+                </a>
+            </div>
+        </li>        
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/8acdc047-6c6b-4603-8ee9-55f03421fceb/doctor-live-again" target="_blank">
+                    <img width="200" height="320" src="Images/DoctorRebirthVol5.jpg" alt="Doctor's Rebirth">
+                    <div class="TextHover">
+                        <h3>Doctor's Rebirth</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">의원, 다시 살다</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/2590f6b1-2188-477c-b31e-f5090c583ffd/osake-wa-fuufu-ni-natte-kara" target="_blank">
-                <img width="200" height="320" src="Images/AlcoholCouple.png" alt="Alcohol Is for Married Couples">
-            </a>
-            <h3>Alcohol Is for Married Couples<br><span>お酒は夫婦になってから</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/b0b721ff-c388-4486-aa0f-c2b0bb321512/sousou-no-frieren" target="_blank">
+                    <img width="200" height="320" src="Images/SousouNoFrierenVol13.jpg" alt="Frieren: Beyond Journey's End">
+                    <div class="TextHover">
+                        <h3>Frieren: Beyond Journey's End</h3>
+                        <p>葬送のフリーレン</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/17ce37ea-1cda-4429-b062-c4b627814225/owari-no-seraph" target="_blank">
-                <img width="200" height="320" src="Images/OwariNoSeraph.jpg" alt="Seraph of the End: Vampire Reign">
-            </a>
-            <h3>Seraph of the End: Vampire Reign<br><span>お酒は夫婦になってから</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/d8c9c264-df00-4b53-bd34-02f12d947cdb/the-deep-sea-of-words" target="_blank">
+                    <img width="200" height="320" src="Images/TheDeepSeaOfWords.jpg" alt="The Deep Sea of Words">
+                    <div class="TextHover">
+                        <h3>The Deep Sea of Words</h3>
+                        <p>言葉の深海</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/dee582b2-2633-4287-86c5-e7a9e51e8bba/yuusha-goikkou-no-kaerimichi" target="_blank">
-                <img width="200" height="320" src="Images/YuushaGoikkou.jpg" alt="The Hero's Party on their Way Back Home">
-            </a>
-            <h3>The Hero's Party on their Way Back Home<br><span>勇者ご一行の帰り道</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/df361a38-eef6-4674-bec6-86d08aa1d1aa/ogami-tsumiki-to-kinichijou" target="_blank">
+                    <img width="200" height="320" src="Images/OgamiTsumikiVol4.jpg" alt="Tsumiki Ogami & the Strange Everyday Life.">
+                    <div class="TextHover">
+                        <h3>Tsumiki Ogami & the Strange Everyday Life.</h3>
+                        <p>尾守つみきと奇日常。</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/f7d3a91a-f47a-43ce-9a2c-4da813b15eea/my-dog-becomes-a-human" target="_blank">
-                <img width="200" height="320" src="Images/DogBecomesHumanVol2.jpg" alt="My Dog Becomes a Human">
-            </a>
-            <h3>My Dog Becomes a Human<br><span>ポン太がヒトになりまして。</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/aa6c76f7-5f5f-46b6-a800-911145f81b9b/sono-bisque-doll-wa-koi-o-suru" target="_blank">
+                    <img width="200" height="320" src="Images/DressUpDarlingVol14.jpg" alt="My Dress-Up Darling">
+                    <div class="TextHover">
+                        <h3>My Dress-Up Darling</h3>
+                        <p>その着せ替え人形は恋をする</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/8acdc047-6c6b-4603-8ee9-55f03421fceb/doctor-live-again" target="_blank">
-                <img width="200" height="320" src="Images/DoctorRebirthVol5.jpg" alt="Doctor's Rebirth">
-            </a>
-            <h3>Doctor's Rebirth<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">의원, 다시 살다</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/9a414441-bbad-43f1-a3a7-dc262ca790a3/omniscient-reader-s-viewpoint" target="_blank">
+                    <img width="200" height="320" src="Images/ORV.jpg" alt="Omniscient Reader's Viewpoint">
+                    <div class="TextHover">
+                        <h3>Omniscient Reader's Viewpoint</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">전지적 독자 시점</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/b0b721ff-c388-4486-aa0f-c2b0bb321512/sousou-no-frieren" target="_blank">
-                <img width="200" height="320" src="Images/SousouNoFrierenVol13.jpg" alt="Frieren: Beyond Journey's End">
-            </a>
-            <h3>Frieren: Beyond Journey's End<br><span>葬送のフリーレン</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/1849fc45-8c4c-4d29-9242-5f35ea689023/duke-pendragon-master-of-the-white-dragon" target="_blank">
+                    <img width="200" height="320" src="Images/DukePendragon.png" alt="Duke Pendragon: Master of the White Dragon">
+                    <div class="TextHover">
+                        <h3>Duke Pendragon: Master of the White Dragon</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">백룡공작 팬드래건</p>
+                    </div>
+                </a>
+            </div>
+        </li>                
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/ca702a1d-f7ef-43b7-baa0-e323dda4f6de/to-be-an-actor" target="_blank">
+                    <img width="200" height="320" src="Images/ToBeAnActor.jpg" alt="To Be an Actor">
+                    <div class="TextHover">
+                        <h3>To Be an Actor</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">배우로서 살겠다</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/d8c9c264-df00-4b53-bd34-02f12d947cdb/the-deep-sea-of-words" target="_blank">
-                <img width="200" height="320" src="Images/TheDeepSeaOfWords.jpg" alt="The Deep Sea of Words">
-            </a>
-            <h3>The Deep Sea of Words<br><span>言葉の深海</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/cb77e4a6-3921-43b9-9d64-7d78cd3205ce/hell-s-paradise-jigokuraku" target="_blank">
+                    <img width="200" height="320" src="Images/Hell'sParadise.jpg" alt="Hell's Paradise: Jigokuraku">
+                    <div class="TextHover">
+                        <h3>Hell's Paradise: Jigokuraku</h3>
+                        <p>ジャンプコミックス</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/df361a38-eef6-4674-bec6-86d08aa1d1aa/ogami-tsumiki-to-kinichijou" target="_blank">
-                <img width="200" height="320" src="Images/OgamiTsumikiVol4.jpg" alt="Tsumiki Ogami & the Strange Everyday Life.">
-            </a>
-            <h3>Tsumiki Ogami & the Strange Everyday Life.<br><span>尾守つみきと奇日常。</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/e0c9100e-287d-4417-8c17-b4e696254dc7/kumicho-musume-to-sewa-gakari" target="_blank">
+                    <img width="200" height="320" src="Images/Yakuza'sDaughterVol12.jpg" alt="The Mob Boss’s Daughter and Her Caretaker">
+                    <div class="TextHover">
+                        <h3>The Mob Boss’s Daughter and Her Caretaker</h3>
+                        <p>組長娘と世話係</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/aa6c76f7-5f5f-46b6-a800-911145f81b9b/sono-bisque-doll-wa-koi-o-suru" target="_blank">
-                <img width="200" height="320" src="Images/DressUpDarlingVol14.jpg" alt="My Dress-Up Darling">
-            </a>
-            <h3>My Dress-Up Darling<br><span>その着せ替え人形は恋をする</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/657ccfcc-5847-40f7-8859-5631eeeb3784/kakkoii-onnanoko-to-12-centi-no-yakusoku" target="_blank">
+                    <img width="200" height="320" src="Images/12cmPromiseVol2.jpg" alt="A Cool Girl and a 12cm Promise">
+                    <div class="TextHover">
+                        <h3>A Cool Girl and a 12cm Promise</h3>
+                        <p>カッコいい女の子と12センチの約束</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/9a414441-bbad-43f1-a3a7-dc262ca790a3/omniscient-reader-s-viewpoint" target="_blank">
-                <img width="200" height="320" src="Images/ORV.jpg" alt="Omniscient Reader's Viewpoint">
-            </a>
-            <h3>Omniscient Reader's Viewpoint<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">전지적 독자 시점</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/9d44a209-f885-4851-98ed-c478d5adb8ee/for-the-musical-genius" target="_blank">
+                    <img width="200" height="320" src="Images/MusicalGenius.jpg" alt="For the Music Genius">
+                    <div class="TextHover">
+                        <h3>For the Music Genius</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">음악천재를 위하여</p>
+                    </div>
+                </a>
+            </div>        
         </li>
         <li>
-            <a href="https://mangadex.org/title/1849fc45-8c4c-4d29-9242-5f35ea689023/duke-pendragon-master-of-the-white-dragon" target="_blank">
-                <img width="200" height="320" src="Images/DukePendragon.png" alt="Duke Pendragon: Master of the White Dragon">
-            </a>
-            <h3>Duke Pendragon: Master of the White Dragon<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">백룡공작 팬드래건</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/11bfa371-f53f-42b7-8213-94b1323b02b6/yubisaki-to-renren" target="_blank">
+                    <img width="200" height="320" src="Images/SignAffectionVol11.jpg" alt="A Sign of Affection">
+                    <div class="TextHover">
+                        <h3>A Sign of Affection</h3>
+                        <p>ゆびさきと恋々</p>
+                    </div>
+                </a>
+            </div>
+        </li>        
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/e43a7f5b-6ae7-478d-a4d5-53c8dc3ce52f/wistoria-wand-and-sword" target="_blank">
+                    <img width="200" height="320" src="Images/WistoriaVol11.jpg" alt="Wistoria: Wand and Sword">
+                    <div class="TextHover">
+                        <h3>Wistoria: Wand and Sword</h3>
+                        <p>杖と剣のウィストリア</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/ca702a1d-f7ef-43b7-baa0-e323dda4f6de/to-be-an-actor" target="_blank">
-                <img width="200" height="320" src="Images/ToBeAnActor.jpg" alt="To Be an Actor">
-            </a>
-            <h3>To Be an Actor<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">배우로서 살겠다</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/e78a489b-6632-4d61-b00b-5206f5b8b22b/tensei-shitara-slime-datta-ken" target="_blank">
+                    <img width="200" height="320" src="Images/TensuraVol28.jpg" alt="That Time I Got Reincarnated as a Slime">
+                    <div class="TextHover">
+                        <h3>That Time I Got Reincarnated as a Slime</h3>
+                        <p>転生したらスライムだった件</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/cb77e4a6-3921-43b9-9d64-7d78cd3205ce/hell-s-paradise-jigokuraku" target="_blank">
-                <img width="200" height="320" src="Images/Hell'sParadise.jpg" alt="Hell's Paradise: Jigokuraku">
-            </a>
-            <h3>Hell's Paradise: Jigokuraku<br><span>ジャンプコミックス</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/1f40b922-6abb-418e-a7e9-cc4d25b21439/saihate-no-paladin" target="_blank">
+                    <img width="200" height="320" src="Images/FarawayPaladinVol13.jpg" alt="The Faraway Paladin">
+                    <div class="TextHover">
+                        <h3>The Faraway Paladin</h3>
+                        <p>最果てのパラディン</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/e0c9100e-287d-4417-8c17-b4e696254dc7/kumicho-musume-to-sewa-gakari" target="_blank">
-                <img width="200" height="320" src="Images/Yakuza'sDaughterVol12.jpg" alt="The Mob Boss’s Daughter and Her Caretaker">
-            </a>
-            <h3>The Mob Boss’s Daughter and Her Caretaker<br><span>組長娘と世話係</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/49d64db2-5841-4ccc-aee8-7b3a0970f6df/i-m-being-raised-by-villains" target="_blank">
+                    <img width="200" height="320" src="Images/RaisedByVillains.jpg" alt="I'm Being Raised by Villains">
+                    <div class="TextHover">
+                        <h3>I'm Being Raised by Villains</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">악당들에게 키워지는 중입니다</p>
+                    </div>
+                </a>
+            </div>        
         </li>
         <li>
-            <a href="https://mangadex.org/title/657ccfcc-5847-40f7-8859-5631eeeb3784/kakkoii-onnanoko-to-12-centi-no-yakusoku" target="_blank">
-                <img width="200" height="320" src="Images/12cmPromiseVol1.jpg" alt="A Cool Girl and a 12cm Promise">
-            </a>
-            <h3>A Cool Girl and a 12cm Promise<br><span>カッコいい女の子と12センチの約束</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/9d44a209-f885-4851-98ed-c478d5adb8ee/for-the-musical-genius" target="_blank">
-                <img width="200" height="320" src="Images/MusicalGenius.jpg" alt="For the Music Genius">
-            </a>
-            <h3>For the Music Genius<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">음악천재를 위하여</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/11bfa371-f53f-42b7-8213-94b1323b02b6/yubisaki-to-renren" target="_blank">
-                <img width="200" height="320" src="Images/SignAffectionVol11.jpg" alt="A Sign of Affection">
-            </a>
-            <h3>A Sign of Affection<br><span>ゆびさきと恋々</span></h3>
-        </li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/6a468761-5bd6-4de0-a0cb-47cb456ac2e0/a-returner-s-magic-should-be-special" target="_blank">
+                    <img width="200" height="320" src="Images/Returner'sMagic.png" alt="A Returner's Magic Should Be Special">
+                    <div class="TextHover">
+                        <h3>A Returner's Magic Should Be Special</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">귀환자의 마법은 특별해야 합니다</p>
+                    </div>
+                </a>
+            </div>        
+        </li>        
     </ul>
 </div>
 
 <div id="Manga" class="hidden content-section">
-    <h1 style="text-align: center;"> Manga </h1>
-        <br>
-    <ul>
-        <li>
-            <a href="https://mangadex.org/title/9d9b04ad-9a83-49f4-8ae4-a9a3780fe9c0/sakamoto-days" target="_blank">
-                <img width="200" height="320" src="Images/SakamotoDaysVol19.jpg" alt="Sakamoto Days">
-            </a>
-            <h3>Sakamoto Days<br><span>サカモト デイズ</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/141609b6-cf86-4266-904c-6648f389cdc9/ruridragon" target="_blank">
-                <img width="200" height="320" src="Images/RuriDragon.jpg" alt="RuriDragon">
-            </a>
-            <h3>RuriDragon<br><span>ルリドラゴン</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/68112dc1-2b80-4f20-beb8-2f2a8716a430/dandadan" target="_blank">
-                <img width="200" height="320" src="Images/DandadanVol18.jpg" alt="Dandadan">
-            </a>
-            <h3>Dandadan<br><span>ダンダダン</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/1c4f1dd6-c7cc-4474-b3de-2cc9adc330c3/sensei-bokutachi-ga-sekai-wo-horoboshimasu" target="_blank">
-                <img width="200" height="320" src="Images/SenseiBokutachiVol5.jpg" alt="Teacher, we will destroy the world!">
-            </a>
-            <h3>Teacher, we will destroy the world!<br><span>先生！ 僕たちが世界を滅ぼします。</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/f8f3f045-01b5-4216-8f41-d947d8b448b0/youchien-wars?tab=chapters" target="_blank">
-                <img width="200" height="320" src="Images/YouchienWarsVol13.jpg" alt="Kindergarten WARS">
-            </a>
-            <h3>Kindergarten WARS<br><span>幼稚園WARS</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/ce7cd7b0-e595-4f0d-98e8-447da10d652d/mission-yozakura-family" target="_blank">
-                <img width="200" height="320" src="Images/YozakuraFamilyVol27.jpg" alt="Yozakura Family">
-            </a>
-            <h3>Mission: Yozakura Family<br><span>夜桜さんちの大作戦</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/418791c0-35cf-4f87-936b-acd9cddf0989/kaoru-hana-wa-rin-to-saku" target="_blank">
-                <img width="200" height="320" src="Images/FragrantFlowerVol15.jpg" alt="The Fragrant Flower Blooms with Dignity">
-            </a>
-            <h3>The Fragrant Flower Blooms with Dignity<br><span>薫る花は凛と咲く</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/fed8c19c-9dec-4ef1-a187-af2c0c9cf17c/will-you-marry-me-again-if-you-are-reborn?tab=chapters" target="_blank">
-                <img width="200" height="320" src="Images/MarryReborn.jpg"alt="Will You Marry Me Again If You Are Reborn?"/>
-            </a>
-            <h3>Will You Marry Me Again If You Are Reborn?<br><span>生まれ変わってもまた、私と結婚してくれますか</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/1b920c57-b359-422c-8d6d-1022c79cc8bb/can-you-fall-in-love-with-the-skeleton?tab=chapters" target="_blank">
-                <img width="200" height="320" src="Images/LoveSkeleton.jpg" alt="Can You Fall in Love With the Skeleton?">
-            </a>
-            <h3>Can You Fall in Love With the Skeleton?<br><span>骸骨と恋はできるのか？</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/65263bf9-4f87-4513-b72f-ad6436b3911c/otaku-ni-koi-wa-muzukashii" target="_blank">
-                <img width="200" height="320" src="Images/Wotakoi.jpg" alt="Wotakoi">
-            </a>
-            <h3>Wotakoi: Love Is Hard for Otaku<br><span>ヲタクに恋は難しい</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/7785688a-fc62-49f3-8891-946877f01878/koibito-tutorial" target="_blank">
-                <img width="200" height="320" src="Images/LoveTutorial.png" alt="Love Tutorial">
-            </a>
-            <h3>Love Tutorial<br><span>恋人チュートリアル</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/bddf8037-f53e-4cfb-a17c-b24108b955a1/boku-no-kanojo-wa-saikoudesu?tab=chapters" target="_blank">
-                <img width="200" height="320" src="Images/BokuNoKanojo.jpg" alt="My Girlfriend Is the Best!">
-            </a>
-            <h3>My Girlfriend Is the Best!<br><span>僕の彼女は最高です！</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/4809bb6c-1af2-41c5-9291-983027602d7f/shy" target="_blank">
-                <img width="200" height="320" src="Images/SHYVol27.jpg" alt="SHY">
-            </a>
-            <h3>SHY<br><span>シャイ</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/f4397b12-137c-426f-92ff-618ddfbad51a/marriage-toxin" target="_blank">
-                <img width="200" height="320" src="Images/MARRIAGETOXINVOL11.jpg" alt="MARRIAGETOXIN">
-            </a>
-            <h3>MARRIAGE TOXIN<br><span>マリッジトキシン</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/8ef11280-30bc-434b-bf61-c61e092905ac/class-de-2-banme-ni-kawaii-onna-no-ko-to-tomodachi-ni-natta" target="_blank">
-                <img width="200" height="320" src="Images/Class2Vol5.jpg" alt="Second Cutest Girl!">
-            </a>
-            <h3>I Became Friends with the Second Cutest Girl in My Class!<br><span>クラスで２番目に可愛い女の子と友だちになった</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/7777c3aa-fe0f-47d6-8672-6a1d60a1a9e8/blue-orchestra" target="_blank">
-                <img width="200" height="320" src="Images/BlueOrchestraVol11.jpg" alt="Blue Orchestra">
-            </a>
-            <h3>Blue Orchestra<br><span>青のオーケストラ</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/0aea9f43-d4a9-4bf7-bebc-550a512f9b95/shikimori-s-not-just-a-cutie" target="_blank">
-                <img width="200" height="320" src="Images/Shikimori-san.jpg" alt="Shikimori-san!">
-            </a>
-            <h3>Shikimori's Not Just a Cutie<br><span>可愛いだけじゃない式守さん</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/38179337-1640-4927-8851-9bedd8d19e82/shiotaiou-no-sato-san-ga-ore-ni-dake-amai" target="_blank">
-                <img width="200" height="320" src="Images/SaltGodSato-sanVol9.jpg" alt="Salt-God Sato-San">
-            </a>
-            <h3>Aren’t You Too Sweet Salt-God Sato-San?<br><span>塩対応の佐藤さんが俺にだけ甘い</span></h3>
-        </li> 
-        <li>
-            <a href="https://mangadex.org/title/d7037b2a-874a-4360-8a7b-07f2899152fd/mairimashita-iruma-kun" target="_blank">
-                <img width="200" height="320" src="Images/IrumaKunVol40.jpg" alt="Mairimashita! Iruma-kun">
-            </a>
-            <h3>Welcome to Demon School! Iruma-kun<br><span>魔入りました！入間くん</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/6d6d9fda-5cd3-40ac-948b-776b1a1a0eb1/suki-na-ko-ga-megane-wo-wasureta" target="_blank">
-                <img width="200" height="320" src="Images/SukinaKo.jpg" alt="The Girl I Like Forgot Her Glasses">
-            </a>
-            <h3>The Girl I Like Forgot Her Glasses<br><span>好きな子がめがねを忘れた</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/cddd1849-ab36-4304-8103-06ba4062b5e6/kubo-san-wa-mob-wo-yurusanai" target="_blank">
-                <img width="200" height="320" src="Images/Kubo-san.jpg" alt="Kubo-san wa Mob wo Yurusanai">
-            </a>
-            <h3>Kubo-san wa Mob wo Yurusanai<br><span>久保さんは僕を許さない</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/37f5cce0-8070-4ada-96e5-fa24b1bd4ff9/kaguya-sama-love-is-war?tab=chapters" target="_blank">
-                <img width="200" height="320" src="Images/Kaguya-sama.jpg" alt="Kaguya-sama: Love is War">
-            </a>
-            <h3>Kaguya-sama: Love is War<br><span>かぐや様は告らせたい～天才たちの恋愛頭脳戦～</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/10fab94e-2227-47e2-b059-f4762eb5ca4e/jii-san-to-baa-san-wakagaeru" target="_blank">
-                <img width="200" height="320" src="Images/JiisanBaasan.jpg" alt="A Story About a Grandpa and Grandma Who Returned Back to Their Youth">
-            </a>
-            <h3>A Story About a Grandpa and Grandma Who Returned Back to Their Youth<br><span>おじいさんとおばあさんが若返った話。</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/c7b8d146-b3f0-49e2-8292-c2878043864d/classmate-no-moto-idol-ga-tonikaku-kyodou-fushin-nan-desu" target="_blank">
-                <img width="200" height="320" src="Images/SuspiciousIdolVol3.jpg" alt="The Idol Girl in My Class is Acting Suspiciously">
-            </a>
-            <h3>The Idol Girl in My Class is Acting Suspiciously<br><span>おじいさんとおばあさんが若返った話。</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/40c058a2-430e-4ced-b663-369dcf38583f/gokurakugai" target="_blank">
-                <img width="200" height="320" src="Images/Gokuragukai.jpg" alt="Gokuragukai">
-            </a>
-            <h3>Gokuragukai<br><span>極楽街</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/f43aab98-8bfe-4275-97cc-9a7b7635eb80/rikei-ga-koi-ni-ochita-no-de-shoumei-shitemita" target="_blank">
-                <img width="200" height="320" src="Images/RikeKoiVol17.jpg" alt="Science Fell in Love, so I Tried to Prove It">
-            </a>
-            <h3>Science Fell in Love, so I Tried to Prove It<br><span>理系が恋に落ちたので証明してみた。</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/ccc174c5-715c-446e-b115-41ae79e1f268/tourigakari-ni-wanpointo-adobaisu-shite-iku-taipu-no-yankii" target="_blank">
-                <img width="200" height="320" src="Images/DeliquentLifeHacks.jpg" alt="A Delinquent's Life Hacks">
-            </a>
-            <h3>A Delinquent's Life Hacks<br><span>通りがかりにワンポイントアドバイスしていくタイプのヤンキー</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/2590f6b1-2188-477c-b31e-f5090c583ffd/osake-wa-fuufu-ni-natte-kara" target="_blank">
-                <img width="200" height="320" src="Images/AlcoholCouple.png" alt="Alcohol Is for Married Couples">
-            </a>
-            <h3>Alcohol Is for Married Couples<br><span>お酒は夫婦になってから</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/17ce37ea-1cda-4429-b062-c4b627814225/owari-no-seraph" target="_blank">
-                <img width="200" height="320" src="Images/OwariNoSeraph.jpg" alt="Seraph of the End: Vampire Reign">
-            </a>
-            <h3>Seraph of the End: Vampire Reign<br><span>お酒は夫婦になってから</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/dee582b2-2633-4287-86c5-e7a9e51e8bba/yuusha-goikkou-no-kaerimichi" target="_blank">
-                <img width="200" height="320" src="Images/YuushaGoikkou.jpg" alt="The Hero's Party on their Way Back Home">
-            </a>
-            <h3>The Hero's Party on their Way Back Home<br><span>勇者ご一行の帰り道</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/f7d3a91a-f47a-43ce-9a2c-4da813b15eea/my-dog-becomes-a-human" target="_blank">
-                <img width="200" height="320" src="Images/DogBecomesHumanVol2.jpg" alt="My Dog Becomes a Human">
-            </a>
-            <h3>My Dog Becomes a Human<br><span>ポン太がヒトになりまして。</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/b0b721ff-c388-4486-aa0f-c2b0bb321512/sousou-no-frieren" target="_blank">
-                <img width="200" height="320" src="Images/SousouNoFrierenVol13.jpg" alt="Frieren: Beyond Journey's End">
-            </a>
-            <h3>Frieren: Beyond Journey's End<br><span>葬送のフリーレン</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/d8c9c264-df00-4b53-bd34-02f12d947cdb/the-deep-sea-of-words" target="_blank">
-                <img width="200" height="320" src="Images/TheDeepSeaOfWords.jpg" alt="The Deep Sea of Words">
-            </a>
-            <h3>The Deep Sea of Words<br><span>言葉の深海</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/df361a38-eef6-4674-bec6-86d08aa1d1aa/ogami-tsumiki-to-kinichijou" target="_blank">
-                <img width="200" height="320" src="Images/OgamiTsumikiVol4.jpg" alt="Tsumiki Ogami & the Strange Everyday Life.">
-            </a>
-            <h3>Tsumiki Ogami & the Strange Everyday Life.<br><span>尾守つみきと奇日常。</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/aa6c76f7-5f5f-46b6-a800-911145f81b9b/sono-bisque-doll-wa-koi-o-suru" target="_blank">
-                <img width="200" height="320" src="Images/DressUpDarlingVol14.jpg" alt="My Dress-Up Darling">
-            </a>
-            <h3>My Dress-Up Darling<br><span>その着せ替え人形は恋をする</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/cb77e4a6-3921-43b9-9d64-7d78cd3205ce/hell-s-paradise-jigokuraku" target="_blank">
-                <img width="200" height="320" src="Images/Hell'sParadise.jpg" alt="Hell's Paradise: Jigokuraku">
-            </a>
-            <h3>Hell's Paradise: Jigokuraku<br><span>ジャンプコミックス</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/e0c9100e-287d-4417-8c17-b4e696254dc7/kumicho-musume-to-sewa-gakari" target="_blank">
-                <img width="200" height="320" src="Images/Yakuza'sDaughterVol12.jpg" alt="The Mob Boss’s Daughter and Her Caretaker">
-            </a>
-            <h3>The Mob Boss’s Daughter and Her Caretaker<br><span>組長娘と世話係</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/657ccfcc-5847-40f7-8859-5631eeeb3784/kakkoii-onnanoko-to-12-centi-no-yakusoku" target="_blank">
-                <img width="200" height="320" src="Images/12cmPromiseVol1.jpg" alt="A Cool Girl and a 12cm Promise">
-            </a>
-            <h3>A Cool Girl and a 12cm Promise<br><span>カッコいい女の子と12センチの約束</span></h3>
-        </li>
-        <li>
-            <a href="https://mangadex.org/title/11bfa371-f53f-42b7-8213-94b1323b02b6/yubisaki-to-renren" target="_blank">
-                <img width="200" height="320" src="Images/SignAffectionVol11.jpg" alt="A Sign of Affection">
-            </a>
-            <h3>A Sign of Affection<br><span>ゆびさきと恋々</span></h3>
-        </li>
-        </ul>
-    </div>
-
-<div id="Manhwa" class="hidden content-section">
-    <h1 style="text-align: center;"> Manhwa </h1>
     <br>
     <ul>
         <li>
-            <a href="https://mangadex.org/title/cb676e05-8e6e-4ec4-8ba0-d3cb4f033cfa/ending-maker" target="_blank">
-                <img width="200" height="320" src="Images/EndingMaker.jpg" alt="Ending Maker">
-            </a>
-            <h3>Ending Maker<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">엔딩 메이커</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/9d9b04ad-9a83-49f4-8ae4-a9a3780fe9c0/sakamoto-days" target="_blank">
+                <img width="200" height="320" src="Images/SakamotoDaysVol20.jpg" alt="Sakamoto Days">
+                <div class="TextHover">
+                    <h3>Sakamoto Days</h3>
+                    <p>サカモト デイズ</p>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/f26c0ae5-c8f6-4630-979e-9a5d310bd795/i-only-want-to-beat-you?tab=chapters" target="_blank">
-                <img width="200" height="320" src="Images/OhRoji.jpg" alt="I Only Want To Beat You">
-            </a>
-            <h3>I Only Want to Beat You, Oh Roji<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">오로지 너를 이기고 싶어</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/141609b6-cf86-4266-904c-6648f389cdc9/ruridragon" target="_blank">
+                <img width="200" height="320" src="Images/RuriDragon.jpg" alt="RuriDragon">
+                <div class="TextHover">
+                    <h3>RuriDragon</h3>
+                    <p>ルリドラゴン</p>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/e0ec499a-e42a-4674-9fb7-e12f6d3e5b3c/the-archmage-s-daughter" target="_blank">
-                <img width="200" height="320" src="Images/ArchmageDaughter.jpg" alt="Archmage's Daughter">
-            </a>
-            <h3>The Archmage's Daughter<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">대마법사의 딸</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/68112dc1-2b80-4f20-beb8-2f2a8716a430/dandadan" target="_blank">
+                <img width="200" height="320" src="Images/DandadanVol18.jpg" alt="Dandadan">
+                <div class="TextHover">
+                    <h3>Dandadan</h3>
+                    <p>ダンダダン</p>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/91b67596-9bc3-48f5-8aad-02ff520fdfa9/the-archmage-s-restaurant" target="_blank">
-                <img width="200" height="320" src="Images/ArchmageRestaurant.jpg" alt="The Archmage's Restaurant">
-            </a>
-            <h3>The Archmage's Restaurant<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">어느 마법사의 식당</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/1c4f1dd6-c7cc-4474-b3de-2cc9adc330c3/sensei-bokutachi-ga-sekai-wo-horoboshimasu" target="_blank">
+                <img width="200" height="320" src="Images/SenseiBokutachiVol5.jpg" alt="Teacher, we will destroy the world!">
+                <div class="TextHover">
+                    <h3>Teacher, we will destroy the world!</h3>
+                    <p>先生！ 僕たちが世界を滅ぼします。</p>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/d5c0896a-d4d5-4ee0-8bf1-a113cb1b86ac/academy-s-undercover-professor?tab=chapters" target="_blank">
-                <img width="200" height="320" src="https://cdn.myanimelist.net/images/manga/4/287318l.jpg?_gl=1*1onaxfq*_gcl_au*MTE0MjgyNTE4My4xNzIzNDcxNTU2*_ga*MTYxNDcwOTYwOS4xNzIzNDcxNTQ2*_ga_26FEP9527K*MTcyODIwNDYxMi4xMy4xLjE3MjgyMDU4MjguNTguMC4w" alt="Academy's Undercover Professor">
-            </a>
-            <h3>Academy's Undercover Professor<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">아카데미에 위장취업당했다</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/f8f3f045-01b5-4216-8f41-d947d8b448b0/youchien-wars?tab=chapters" target="_blank">
+                <img width="200" height="320" src="Images/YouchienWarsVol13.jpg" alt="Kindergarten WARS">
+                <div class="TextHover">
+                    <h3>Kindergarten WARS</h3>
+                    <p>幼稚園WARS</p>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/b2ae13e3-bea1-4f11-bfbe-4269f66e74f8/the-return-of-the-8th-class-mage" target="_blank">
-                <img width="200" height="320" src="Images/8thClassMagician.jpg" alt="The Return of the 8th Class Mage">
-            </a>
-            <h3>The Return of the 8th Class Mage<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">8클래스 마법사의 회귀</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/ce7cd7b0-e595-4f0d-98e8-447da10d652d/mission-yozakura-family" target="_blank">
+                <img width="200" height="320" src="Images/YozakuraFamilyVol28.jpg" alt="Yozakura Family">
+                <div class="TextHover">
+                    <h3>Mission: Yozakura Family</h3>
+                    <p>夜桜さんちの大作戦</p>
+                </div>
+                </a>
+            </div>
+        </li>        
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/418791c0-35cf-4f87-936b-acd9cddf0989/kaoru-hana-wa-rin-to-saku" target="_blank">
+                <img width="200" height="320" src="Images/FragrantFlowerVol15.jpg" alt="The Fragrant Flower Blooms with Dignity">
+                <div class="TextHover">
+                    <h3>The Fragrant Flower Blooms with Dignity</h3>
+                    <p>薫る花は凛と咲く</p>
+                </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/26c8f00a-3925-4f22-ac21-83145be2b733/the-lazy-lord-masters-the-sword?tab=chapters" target="_blank">
-                <img width="200" height="320" src="Images/DeadbeatNobleVol3.jpg" alt="Reformation of the Deadbeat Noble">
-            </a>
-            <h3>Reformation of the Deadbeat Noble<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">나태 공자, 노력 천재 되다</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/fed8c19c-9dec-4ef1-a187-af2c0c9cf17c/will-you-marry-me-again-if-you-are-reborn?tab=chapters" target="_blank">
+                    <img width="200" height="320" src="Images/MarryReborn.jpg" alt="Will You Marry Me Again If You Are Reborn?">
+                    <div class="TextHover">
+                        <h3>Will You Marry Me Again If You Are Reborn?</h3>
+                        <p>生まれ変わってもまた、私と結婚してくれますか</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/4a973243-952e-44d7-a50f-883b4b7c9cc2/sss-class-revival-hunter" target="_blank">
-                <img width="200" height="320" src="Images/SSSClassSuicideHunterVol3.jpg" alt="SSS-Class Suicide Hunter">
-            </a>
-            <h3>SSS-Class Suicide Hunter<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">SSS급 죽어야 사는 헌터</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/1b920c57-b359-422c-8d6d-1022c79cc8bb/can-you-fall-in-love-with-the-skeleton?tab=chapters" target="_blank">
+                    <img width="200" height="320" src="Images/LoveSkeleton.jpg" alt="Can You Fall in Love With the Skeleton?">
+                    <div class="TextHover">
+                        <h3>Can You Fall in Love With the Skeleton?</h3>
+                        <p>骸骨と恋はできるのか？</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/5f6de04c-8465-4bb1-81a6-c71f8ccbd08e/bizarre-restaurant" target="_blank">
-                <img width="200" height="320" src="Images/BizzareRestaurant.png" alt="Bizarre Restaurant">
-            </a>
-            <h3>Bizarre Restaurant<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">괴식식당</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/65263bf9-4f87-4513-b72f-ad6436b3911c/otaku-ni-koi-wa-muzukashii" target="_blank">
+                    <img width="200" height="320" src="Images/Wotakoi.jpg" alt="Wotakoi">
+                    <div class="TextHover">
+                        <h3>Wotakoi: Love Is Hard for Otaku</h3>
+                        <p>ヲタクに恋は難しい</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/1dc3ebf9-c86c-431c-bcca-5e35ac124f28/lout-of-count-s-family" target="_blank">
-                <img width="200" height="320" src="Images/TrashCount.png" alt="Trash of the Count's Family">
-            </a>
-            <h3>Trash of the Count's Family<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">백작가의 망나니가 되었다</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/7785688a-fc62-49f3-8891-946877f01878/koibito-tutorial" target="_blank">
+                    <img width="200" height="320" src="Images/LoveTutorial.png" alt="Love Tutorial">
+                    <div class="TextHover">
+                        <h3>Love Tutorial</h3>
+                        <p>恋人チュートリアル</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/f19ee5ce-5b4a-4808-ba31-9374fa7900c2/medical-return" target="_blank">
-                <img width="200" height="320" src="Images/MedicalRebirth.png" alt="Medical Rebirth">
-            </a>
-            <h3>Medical Rebirth<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">메디컬 환생</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/bddf8037-f53e-4cfb-a17c-b24108b955a1/boku-no-kanojo-wa-saikoudesu?tab=chapters" target="_blank">
+                    <img width="200" height="320" src="Images/BokuNoKanojo.jpg" alt="My Girlfriend Is the Best!">
+                    <div class="TextHover">
+                        <h3>My Girlfriend Is the Best!</h3>
+                        <p>僕の彼女は最高です！</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/8acdc047-6c6b-4603-8ee9-55f03421fceb/doctor-live-again" target="_blank">
-                <img width="200" height="320" src="Images/DoctorRebirthVol5.jpg" alt="Doctor's Rebirth">
-            </a>
-            <h3>Doctor's Rebirth<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">의원, 다시 살다</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/4809bb6c-1af2-41c5-9291-983027602d7f/shy" target="_blank">
+                    <img width="200" height="320" src="Images/SHYVol28.jpg" alt="SHY">
+                    <div class="TextHover">
+                        <h3>SHY</h3>
+                        <p>シャイ</p>
+                    </div>
+                </a>
+            </div>
+        </li>           
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/f4397b12-137c-426f-92ff-618ddfbad51a/marriage-toxin" target="_blank">
+                    <img width="200" height="320" src="Images/MARRIAGETOXINVOL11.jpg" alt="MARRIAGETOXIN">
+                    <div class="TextHover">
+                        <h3>MARRIAGE TOXIN</h3>
+                        <p>マリッジトキシン</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/9a414441-bbad-43f1-a3a7-dc262ca790a3/omniscient-reader-s-viewpoint" target="_blank">
-                <img width="200" height="320" src="Images/ORV.jpg" alt="Omniscient Reader's Viewpoint">
-            </a>
-            <h3>Omniscient Reader's Viewpoint<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">전지적 독자 시점</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/8ef11280-30bc-434b-bf61-c61e092905ac/class-de-2-banme-ni-kawaii-onna-no-ko-to-tomodachi-ni-natta" target="_blank">
+                    <img width="200" height="320" src="Images/Class2Vol5.jpg" alt="Second Cutest Girl!">
+                    <div class="TextHover">
+                        <h3>I Became Friends with the Second Cutest Girl in My Class!</h3>
+                        <p>クラスで２番目に可愛い女の子と友だちになった</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/1849fc45-8c4c-4d29-9242-5f35ea689023/duke-pendragon-master-of-the-white-dragon" target="_blank">
-                <img width="200" height="320" src="Images/DukePendragon.png" alt="Duke Pendragon: Master of the White Dragon">
-            </a>
-            <h3>Duke Pendragon: Master of the White Dragon<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">백룡공작 팬드래건</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/7777c3aa-fe0f-47d6-8672-6a1d60a1a9e8/blue-orchestra" target="_blank">
+                    <img width="200" height="320" src="Images/BlueOrchestraVol11.jpg" alt="Blue Orchestra">
+                    <div class="TextHover">
+                        <h3>Blue Orchestra</h3>
+                        <p>青のオーケストラ</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/ca702a1d-f7ef-43b7-baa0-e323dda4f6de/to-be-an-actor" target="_blank">
-                <img width="200" height="320" src="Images/ToBeAnActor.jpg" alt="To Be an Actor">
-            </a>
-            <h3>To Be an Actor<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">배우로서 살겠다</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/0aea9f43-d4a9-4bf7-bebc-550a512f9b95/shikimori-s-not-just-a-cutie" target="_blank">
+                    <img width="200" height="320" src="Images/Shikimori-san.jpg" alt="Shikimori-san!">
+                    <div class="TextHover">
+                        <h3>Shikimori's Not Just a Cutie</h3>
+                        <p>可愛いだけじゃない式守さん</p>
+                    </div>
+                </a>
+            </div>
+        </li>                
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/38179337-1640-4927-8851-9bedd8d19e82/shiotaiou-no-sato-san-ga-ore-ni-dake-amai" target="_blank">
+                    <img width="200" height="320" src="Images/SaltGodSato-sanVol9.jpg" alt="Salt-God Sato-San">
+                    <div class="TextHover">
+                        <h3>Aren’t You Too Sweet Salt-God Sato-San?</h3>
+                        <p>塩対応の佐藤さんが俺にだけ甘い</p>
+                    </div>
+                </a>
+            </div>
         </li>
         <li>
-            <a href="https://mangadex.org/title/9d44a209-f885-4851-98ed-c478d5adb8ee/for-the-musical-genius" target="_blank">
-                <img width="200" height="320" src="Images/MusicalGenius.jpg" alt="For the Music Genius">
-            </a>
-            <h3>For the Music Genius<br><span style="font-family: Noto Serif KR, serif; font-weight: lighter;">음악천재를 위하여</span></h3>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/d7037b2a-874a-4360-8a7b-07f2899152fd/mairimashita-iruma-kun" target="_blank">
+                    <img width="200" height="320" src="Images/IrumaKunVol41.jpg" alt="Mairimashita! Iruma-kun">
+                    <div class="TextHover">
+                        <h3>Welcome to Demon School! Iruma-kun</h3>
+                        <p>魔入りました！入間くん</p>
+                    </div>
+                </a>
+            </div>
+        </li>  
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/6d6d9fda-5cd3-40ac-948b-776b1a1a0eb1/suki-na-ko-ga-megane-wo-wasureta" target="_blank">
+                    <img width="200" height="320" src="Images/SukinaKo.jpg" alt="The Girl I Like Forgot Her Glasses">
+                    <div class="TextHover">
+                        <h3>The Girl I Like Forgot Her Glasses</h3>
+                        <p>好きな子がめがねを忘れた</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/cddd1849-ab36-4304-8103-06ba4062b5e6/kubo-san-wa-mob-wo-yurusanai" target="_blank">
+                    <img width="200" height="320" src="Images/Kubo-san.jpg" alt="Kubo-san wa Mob wo Yurusanai">
+                    <div class="TextHover">
+                        <h3>Kubo-san wa Mob wo Yurusanai</h3>
+                        <p>久保さんは僕を許さない</p>
+                    </div>
+                </a>
+            </div>
+        </li>   
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/37f5cce0-8070-4ada-96e5-fa24b1bd4ff9/kaguya-sama-love-is-war?tab=chapters" target="_blank">
+                    <img width="200" height="320" src="Images/Kaguya-sama.jpg" alt="Kaguya-sama: Love is War">
+                    <div class="TextHover">
+                        <h3>Kaguya-sama: Love is War</h3>
+                        <p>かぐや様は告らせたい～天才たちの恋愛頭脳戦～</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/10fab94e-2227-47e2-b059-f4762eb5ca4e/jii-san-to-baa-san-wakagaeru" target="_blank">
+                    <img width="200" height="320" src="Images/JiisanBaasan.jpg" alt="A Story About a Grandpa and Grandma Who Returned Back to Their Youth">
+                    <div class="TextHover">
+                        <h3>A Story About a Grandpa and Grandma Who Returned Back to Their Youth</h3>
+                        <p>おじいさんとおばあさんが若返った話。</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/c7b8d146-b3f0-49e2-8292-c2878043864d/classmate-no-moto-idol-ga-tonikaku-kyodou-fushin-nan-desu" target="_blank">
+                    <img width="200" height="320" src="Images/SuspiciousIdolVol3.jpg" alt="The Idol Girl in My Class is Acting Suspiciously">
+                    <div class="TextHover">
+                        <h3>The Idol Girl in My Class is Acting Suspiciously</h3>
+                        <p>おじいさんとおばあさんが若返った話。</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/40c058a2-430e-4ced-b663-369dcf38583f/gokurakugai" target="_blank">
+                    <img width="200" height="320" src="Images/Gokuragukai.jpg" alt="Gokuragukai">
+                    <div class="TextHover">
+                        <h3>Gokuragukai</h3>
+                        <p>極楽街</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/f43aab98-8bfe-4275-97cc-9a7b7635eb80/rikei-ga-koi-ni-ochita-no-de-shoumei-shitemita" target="_blank">
+                    <img width="200" height="320" src="Images/RikeKoiVol17.jpg" alt="Science Fell in Love, so I Tried to Prove It">
+                    <div class="TextHover">
+                        <h3>Science Fell in Love, so I Tried to Prove It</h3>
+                        <p>理系が恋に落ちたので証明してみた。</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/ccc174c5-715c-446e-b115-41ae79e1f268/tourigakari-ni-wanpointo-adobaisu-shite-iku-taipu-no-yankii" target="_blank">
+                    <img width="200" height="320" src="Images/DeliquentLifeHacks.jpg" alt="A Delinquent's Life Hacks">
+                    <div class="TextHover">
+                        <h3>A Delinquent's Life Hacks</h3>
+                        <p>通りがかりにワンポイントアドバイスしていくタイプのヤンキー</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/2590f6b1-2188-477c-b31e-f5090c583ffd/osake-wa-fuufu-ni-natte-kara" target="_blank">
+                    <img width="200" height="320" src="Images/AlcoholCouple.png" alt="Alcohol Is for Married Couples">
+                    <div class="TextHover">
+                        <h3>Alcohol Is for Married Couples</h3>
+                        <p>お酒は夫婦になってから</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/17ce37ea-1cda-4429-b062-c4b627814225/owari-no-seraph" target="_blank">
+                    <img width="200" height="320" src="Images/OwariNoSeraph.jpg" alt="Seraph of the End: Vampire Reign">
+                    <div class="TextHover">
+                        <h3>Seraph of the End: Vampire Reign</h3>
+                        <p>お酒は夫婦になってから</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/dee582b2-2633-4287-86c5-e7a9e51e8bba/yuusha-goikkou-no-kaerimichi" target="_blank">
+                    <img width="200" height="320" src="Images/YuushaGoikkou.jpg" alt="The Hero's Party on their Way Back Home">
+                    <div class="TextHover">
+                        <h3>The Hero's Party on their Way Back Home</h3>
+                        <p>勇者ご一行の帰り道</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/f7d3a91a-f47a-43ce-9a2c-4da813b15eea/my-dog-becomes-a-human" target="_blank">
+                    <img width="200" height="320" src="Images/DogBecomesHumanVol2.jpg" alt="My Dog Becomes a Human">
+                    <div class="TextHover">
+                        <h3>My Dog Becomes a Human</h3>
+                        <p>ポン太がヒトになりまして。</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/b0b721ff-c388-4486-aa0f-c2b0bb321512/sousou-no-frieren" target="_blank">
+                    <img width="200" height="320" src="Images/SousouNoFrierenVol13.jpg" alt="Frieren: Beyond Journey's End">
+                    <div class="TextHover">
+                        <h3>Frieren: Beyond Journey's End</h3>
+                        <p>葬送のフリーレン</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/d8c9c264-df00-4b53-bd34-02f12d947cdb/the-deep-sea-of-words" target="_blank">
+                    <img width="200" height="320" src="Images/TheDeepSeaOfWords.jpg" alt="The Deep Sea of Words">
+                    <div class="TextHover">
+                        <h3>The Deep Sea of Words</h3>
+                        <p>言葉の深海</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/df361a38-eef6-4674-bec6-86d08aa1d1aa/ogami-tsumiki-to-kinichijou" target="_blank">
+                    <img width="200" height="320" src="Images/OgamiTsumikiVol4.jpg" alt="Tsumiki Ogami & the Strange Everyday Life.">
+                    <div class="TextHover">
+                        <h3>Tsumiki Ogami & the Strange Everyday Life.</h3>
+                        <p>尾守つみきと奇日常。</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/aa6c76f7-5f5f-46b6-a800-911145f81b9b/sono-bisque-doll-wa-koi-o-suru" target="_blank">
+                    <img width="200" height="320" src="Images/DressUpDarlingVol14.jpg" alt="My Dress-Up Darling">
+                    <div class="TextHover">
+                        <h3>My Dress-Up Darling</h3>
+                        <p>その着せ替え人形は恋をする</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/cb77e4a6-3921-43b9-9d64-7d78cd3205ce/hell-s-paradise-jigokuraku" target="_blank">
+                    <img width="200" height="320" src="Images/Hell'sParadise.jpg" alt="Hell's Paradise: Jigokuraku">
+                    <div class="TextHover">
+                        <h3>Hell's Paradise: Jigokuraku</h3>
+                        <p>ジャンプコミックス</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/e0c9100e-287d-4417-8c17-b4e696254dc7/kumicho-musume-to-sewa-gakari" target="_blank">
+                    <img width="200" height="320" src="Images/Yakuza'sDaughterVol12.jpg" alt="The Mob Boss’s Daughter and Her Caretaker">
+                    <div class="TextHover">
+                        <h3>The Mob Boss’s Daughter and Her Caretaker</h3>
+                        <p>組長娘と世話係</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/657ccfcc-5847-40f7-8859-5631eeeb3784/kakkoii-onnanoko-to-12-centi-no-yakusoku" target="_blank">
+                    <img width="200" height="320" src="Images/12cmPromiseVol2.jpg" alt="A Cool Girl and a 12cm Promise">
+                    <div class="TextHover">
+                        <h3>A Cool Girl and a 12cm Promise</h3>
+                        <p>カッコいい女の子と12センチの約束</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/11bfa371-f53f-42b7-8213-94b1323b02b6/yubisaki-to-renren" target="_blank">
+                    <img width="200" height="320" src="Images/SignAffectionVol11.jpg" alt="A Sign of Affection">
+                    <div class="TextHover">
+                        <h3>A Sign of Affection</h3>
+                        <p>ゆびさきと恋々</p>
+                    </div>
+                </a>
+            </div>
+        </li>        
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/e43a7f5b-6ae7-478d-a4d5-53c8dc3ce52f/wistoria-wand-and-sword" target="_blank">
+                    <img width="200" height="320" src="Images/WistoriaVol11.jpg" alt="Wistoria: Wand and Sword">
+                    <div class="TextHover">
+                        <h3>Wistoria: Wand and Sword</h3>
+                        <p>杖と剣のウィストリア</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/e78a489b-6632-4d61-b00b-5206f5b8b22b/tensei-shitara-slime-datta-ken" target="_blank">
+                    <img width="200" height="320" src="Images/TensuraVol28.jpg" alt="That Time I Got Reincarnated as a Slime">
+                    <div class="TextHover">
+                        <h3>That Time I Got Reincarnated as a Slime</h3>
+                        <p>転生したらスライムだった件</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/1f40b922-6abb-418e-a7e9-cc4d25b21439/saihate-no-paladin" target="_blank">
+                    <img width="200" height="320" src="Images/FarawayPaladinVol13.jpg" alt="The Faraway Paladin">
+                    <div class="TextHover">
+                        <h3>The Faraway Paladin</h3>
+                        <p>最果てのパラディン</p>
+                    </div>
+                </a>
+            </div>
         </li>
     </ul>
-    </div>
+</div>
+<div id="Manhwa" class="hidden content-section">
+    <ul>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-3"></div>
+                <a href="https://mangadex.org/title/cb676e05-8e6e-4ec4-8ba0-d3cb4f033cfa/ending-maker" target="_blank">
+                <img width="200" height="320" src="Images/EndingMaker.jpg" alt="Ending Maker">
+                <div class="TextHover">
+                    <h3>Ending Maker</h3>
+                    <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">엔딩 메이커</p>
+                </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/f26c0ae5-c8f6-4630-979e-9a5d310bd795/i-only-want-to-beat-you?tab=chapters" target="_blank">
+                <img width="200" height="320" src="Images/OhRoji.jpg" alt="I Only Want To Beat You">
+                <div class="TextHover">
+                    <h3>I Only Want to Beat You, Oh Roji</h3>
+                    <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">오로지 너를 이기고 싶어</p>
+                </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/e0ec499a-e42a-4674-9fb7-e12f6d3e5b3c/the-archmage-s-daughter" target="_blank">
+                    <img width="200" height="320" src="Images/ArchmageDaughter.jpg" alt="Archmage's Daughter">
+                    <div class="TextHover">
+                        <h3>The Archmage's Daughter</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">대마법사의 딸</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/91b67596-9bc3-48f5-8aad-02ff520fdfa9/the-archmage-s-restaurant" target="_blank">
+                    <img width="200" height="320" src="Images/ArchmageRestaurant.jpg" alt="The Archmage's Restaurant">
+                    <div class="TextHover">
+                        <h3>The Archmage's Restaurant</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">어느 마법사의 식당</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/d5c0896a-d4d5-4ee0-8bf1-a113cb1b86ac/academy-s-undercover-professor?tab=chapters" target="_blank">
+                    <img width="200" height="320" src="https://cdn.myanimelist.net/images/manga/4/287318l.jpg?_gl=1*1onaxfq*_gcl_au*MTE0MjgyNTE4My4xNzIzNDcxNTU2*_ga*MTYxNDcwOTYwOS4xNzIzNDcxNTQ2*_ga_26FEP9527K*MTcyODIwNDYxMi4xMy4xLjE3MjgyMDU4MjguNTguMC4w" alt="Academy's Undercover Professor">
+                    <div class="TextHover">
+                        <h3>Academy's Undercover Professor</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">아카데미에 위장취업당했다</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/b2ae13e3-bea1-4f11-bfbe-4269f66e74f8/the-return-of-the-8th-class-mage" target="_blank">
+                    <img width="200" height="320" src="Images/8thClassMagician.jpg" alt="The Return of the 8th Class Mage">
+                    <div class="TextHover">
+                        <h3>The Return of the 8th Class Mage</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">8클래스 마법사의 회귀</p>
+                    </div>
+                </a>
+            </div>
+        </li>        
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/26c8f00a-3925-4f22-ac21-83145be2b733/the-lazy-lord-masters-the-sword?tab=chapters" target="_blank">
+                    <img width="200" height="320" src="Images/DeadbeatNobleVol3.jpg" alt="Reformation of the Deadbeat Noble">
+                    <div class="TextHover">
+                        <h3>Reformation of the Deadbeat Noble</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">나태 공자, 노력 천재 되다</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/4a973243-952e-44d7-a50f-883b4b7c9cc2/sss-class-revival-hunter" target="_blank">
+                    <img width="200" height="320" src="Images/SSSClassSuicideHunterVol3.jpg" alt="SSS-Class Suicide Hunter">
+                    <div class="TextHover">
+                        <h3>SSS-Class Suicide Hunter</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">SSS급 죽어야 사는 헌터</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/5f6de04c-8465-4bb1-81a6-c71f8ccbd08e/bizarre-restaurant" target="_blank">
+                    <img width="200" height="320" src="Images/BizzareRestaurant.png" alt="Bizarre Restaurant">
+                    <div class="TextHover">
+                        <h3>Bizarre Restaurant</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">괴식식당</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/1dc3ebf9-c86c-431c-bcca-5e35ac124f28/lout-of-count-s-family" target="_blank">
+                    <img width="200" height="320" src="Images/TrashCount.png" alt="Trash of the Count's Family">
+                    <div class="TextHover">
+                        <h3>Trash of the Count's Family</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">백작가의 망나니가 되었다</p>
+                    </div>
+                </a>
+            </div>
+        </li>        
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/f19ee5ce-5b4a-4808-ba31-9374fa7900c2/medical-return" target="_blank">
+                    <img width="200" height="320" src="Images/MedicalRebirth.png" alt="Medical Rebirth">
+                    <div class="TextHover">
+                        <h3>Medical Rebirth</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">메디컬 환생</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/8acdc047-6c6b-4603-8ee9-55f03421fceb/doctor-live-again" target="_blank">
+                    <img width="200" height="320" src="Images/DoctorRebirthVol5.jpg" alt="Doctor's Rebirth">
+                    <div class="TextHover">
+                        <h3>Doctor's Rebirth</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">의원, 다시 살다</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/9a414441-bbad-43f1-a3a7-dc262ca790a3/omniscient-reader-s-viewpoint" target="_blank">
+                    <img width="200" height="320" src="Images/ORV.jpg" alt="Omniscient Reader's Viewpoint">
+                    <div class="TextHover">
+                        <h3>Omniscient Reader's Viewpoint</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">전지적 독자 시점</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/1849fc45-8c4c-4d29-9242-5f35ea689023/duke-pendragon-master-of-the-white-dragon" target="_blank">
+                    <img width="200" height="320" src="Images/DukePendragon.png" alt="Duke Pendragon: Master of the White Dragon">
+                    <div class="TextHover">
+                        <h3>Duke Pendragon: Master of the White Dragon</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">백룡공작 팬드래건</p>
+                    </div>
+                </a>
+            </div>
+        </li>                
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/ca702a1d-f7ef-43b7-baa0-e323dda4f6de/to-be-an-actor" target="_blank">
+                    <img width="200" height="320" src="Images/ToBeAnActor.jpg" alt="To Be an Actor">
+                    <div class="TextHover">
+                        <h3>To Be an Actor</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">배우로서 살겠다</p>
+                    </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/9d44a209-f885-4851-98ed-c478d5adb8ee/for-the-musical-genius" target="_blank">
+                    <img width="200" height="320" src="Images/MusicalGenius.jpg" alt="For the Music Genius">
+                    <div class="TextHover">
+                        <h3>For the Music Genius</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">음악천재를 위하여</p>
+                    </div>
+                </a>
+            </div>        
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-1"></div>
+                <a href="https://mangadex.org/title/49d64db2-5841-4ccc-aee8-7b3a0970f6df/i-m-being-raised-by-villains" target="_blank">
+                    <img width="200" height="320" src="Images/RaisedByVillains.jpg" alt="I'm Being Raised by Villains">
+                    <div class="TextHover">
+                        <h3>I'm Being Raised by Villains</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">악당들에게 키워지는 중입니다</p>
+                    </div>
+                </a>
+            </div>        
+        </li>
+        <li>
+            <div class="ImgCont">
+                <div class="dog-ear-2"></div>
+                <a href="https://mangadex.org/title/6a468761-5bd6-4de0-a0cb-47cb456ac2e0/a-returner-s-magic-should-be-special" target="_blank">
+                    <img width="200" height="320" src="Images/Returner'sMagic.png" alt="A Returner's Magic Should Be Special">
+                    <div class="TextHover">
+                        <h3>A Returner's Magic Should Be Special</h3>
+                        <p style="font-family: Noto Serif KR, serif; font-weight: lighter;">귀환자의 마법은 특별해야 합니다</p>
+                    </div>
+                </a>
+            </div>        
+        </li>
+    </ul>
+</div>
 
 <div id="AboutPage" class="hidden content-section">
     <h1>About</h1>
     <br>
-    <p>Hello! This is my mangas that I would recommend to people to read, I hope that I had minimized any suggestive stuff. <br>All these mangas or manhwas are what I have read or still reading since the past 4 years!</p>
+    <p>Hello! This is my mangas that I would recommend to people to read, I hope that I had minimized any suggestive stuff. </h3>All these mangas or manhwas are what I have read or still reading since the past 4 years!</p>
     <p style="padding-top:5rem;">I hope you are interested in these weird taste I have...</p>
     </div>
 </div>
@@ -742,6 +1516,14 @@
 <div id="UpdateLog" class="hidden">
     <h1>Update Log</h1>
     <br>
+    <br>
+    <h3><b>Version 1.2.0</b></h3>
+    (January 28, 2025)<br>
+    - Added 3 Mangas and 2 Manhwas (60 in Total)<br>
+    - Changed Volume Covers in 5 Mangas<br>
+    - Made the Manhwa/Manga Title be overlayed inside their respective volume covers<br>
+    - Added a dog-ear at the top-left of each volume covers to indicate the status of Mangas and Manwhas<br>
+    - Made Mangas and Manhwas be much larger, and reverted back to 4 items per column <br>
     <br>
     <h3><b>Version 1.1.3c</b></h3>
     (January 2, 2025)<br>
@@ -773,7 +1555,7 @@
     (October 11, 2024)<br>
     - Added 2 Mangas (35 in Total)<br>
     - Made the rows have 5 items.<br>
-    - Added an "Other" tab to promote in supporting these Mangas/Manhwas.<br>
+    - Added an "Other" tab to promote Mangas and Manhwas.<br>
     - Minor bug fixes<br>
     <br>
     <h3><b>Version 1.1.0</b></h3>

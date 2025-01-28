@@ -61,7 +61,7 @@ html{
 }
 
 body {
-    background: url(Images/BackgroundImage1.jpg) no-repeat center center fixed;
+    background: url(Images/BackgroundImage2.jpg) no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -157,7 +157,7 @@ ul { /*The content*/
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-content: center;
     list-style-type: none;
@@ -168,35 +168,16 @@ ul { /*The content*/
     grid-template-columns: repeat(2, 1fr);
 }
 
-li {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    width: 100%;
-    justify-content: top;
-}
-
-li:hover {
-    background-color: #e9e9e9;
-}
-
 span {
     font-style: normal;
     font-family: "Yomogi", cursive;
     font-weight: lighter;
 }
 
-#AboutPage{
+#AboutPage, #UpdateLog, #Other{
+    padding: 20px;
     width: 1000px;
-    height: 80%;
-}
-
-#UpdateLog, #Other{
-    width:1000px;
-    height: 80%;
+    height: fit-content;
 }
 
 #All, #Manga, #Manhwa, #AboutPage, #UpdateLog, #Other {
@@ -205,19 +186,91 @@ span {
     background-color: transparent;
     border-radius: 15px;
     border-color: transparent;
-    padding-top: 2rem;
-    padding: 2rem;
     line-height: 0.6cm;
     margin-bottom: 1rem;
     color: #434343;   
 }
 
-img {
-    transition: transform 0.3s ease;
+
+.dog-ear-1, .dog-ear-2, .dog-ear-3{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    transform: translateY(-100%);
+    transition: transform 0.1s ease;
 }
 
-img:hover {
-    transform: scale(1.05); 
+.dog-ear-1{
+    background-color:rgba(4, 208, 0,1);
+}
+
+.dog-ear-2{
+    background-color: rgba(0, 201, 245,1);
+}
+
+.dog-ear-3{
+    background-color: rgba(206, 118, 40,1);
+}
+
+.ImgCont {
+    position: relative;
+    width: 300px;
+    height: 489px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.ImgCont img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.1s ease;
+    position: relative;
+}
+
+.ImgCont:hover img {
+    transform: scale(1.02);
+}
+
+.TextHover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+    color: aliceblue;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transform: translateY(100%); 
+    transition: transform 0.1s ease;;
+}
+
+.ImgCont:hover .TextHover {
+    transform: translateY(0); 
+}
+
+.ImgCont:hover .TextHover, .ImgCont:hover .dog-ear-1, .ImgCont:hover .dog-ear-2, .ImgCont:hover .dog-ear-3{
+    transform: translateY(0%);
+    pointer-events: auto;
+}
+
+.TextHover h3 {
+    text-shadow: #434343;
+    font-size: 30px;
+    margin: 0;
+}
+
+.TextHover p {
+    text-shadow: #434343;
+    font-size:20px;
+    margin: 10px 0 0 0;
 }
 
 /*mobile version*/
@@ -226,7 +279,6 @@ img:hover {
         text-align: center;
     }
 
-    
     #GoBack{
         background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/87/Arrow_top.png);
         background-size: cover;
@@ -243,7 +295,7 @@ img:hover {
 
     .Tabs-Container {
         gap: 10px; 
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         width: 100%;
         height: 100%;
         justify-content: center;
@@ -263,7 +315,7 @@ img:hover {
     ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
-        gap: 20px;
+        gap: 10px;
     }
     
     li {
@@ -284,21 +336,31 @@ img:hover {
         flex-direction: column; 
         gap: 20px; 
     }
-    
-    img{
+
+    .ImgCont { /* Manga/Manwha on Mobile */
+        position: relative;
         width: 150px;
-        height:230px;
+        height: 244px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .TextHover{
+        justify-content: flex-end; /* Keep text at the bottom */;
+    }
+
+    .TextHover h3{
+        font-size:15px;
+    }
+
+    .TextHover p{
+        display:none;;
     }
 
     #SourceList{
         width:95%;
         height:95%;
-    }
-
-    h3{
-        width: 65%;
-        height:65%;
-        text-align: center;
     }
 }
 

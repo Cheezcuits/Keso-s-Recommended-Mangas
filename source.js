@@ -13,7 +13,7 @@ tabs.forEach(tab => {
 
 //Go back button and smooth scrolling
 document.getElementById('GoBack').addEventListener('click', function() {
-    const element = document.getElementById('Tabs-Container');
+    const element = document.querySelector('.Tabs-Container');
     const targetPosition = element.getBoundingClientRect().top + window.pageYOffset;
     const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;

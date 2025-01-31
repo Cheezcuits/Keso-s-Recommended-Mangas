@@ -339,8 +339,8 @@ span {
 
     .ImgCont { /* Manga/Manwha on Mobile */
         position: relative;
-        width: 150px;
-        height: 244px;
+        width: 172px;
+        height: 280px;
         margin: 0 auto;
         overflow: hidden;
         border-radius: 10px;
@@ -355,7 +355,7 @@ span {
     }
 
     .TextHover p{
-        display:none;;
+        display:none;
     }
 
     #SourceList{
